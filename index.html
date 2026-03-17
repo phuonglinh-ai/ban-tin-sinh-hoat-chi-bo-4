@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản tin Thông tin sinh hoạt chi bộ số 4</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] } } } }
+    </script>
+
+    <style>
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e2740;
+        }
+
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #2d3a56;
+        }
+
+        .toc-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #64748b;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-link:hover {
+            background: #f1f5f9;
+            color: #334155;
+        }
+
+        .toc-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 7px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.7rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+
+        .toc-link.active {
+            color: #2563eb;
+            background: #eff6ff;
+            border-left-color: #3b82f6;
+            font-weight: 600;
+        }
+
+        .toc-link.active .toc-badge {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #1d4ed8;
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.35);
+        }
+
+        .dark .toc-link {
+            color: #94a3b8;
+        }
+
+        .dark .toc-link:hover {
+            background: rgba(139, 92, 246, 0.06);
+            color: #c4b5fd;
+        }
+
+        .dark .toc-badge {
+            background: #1a1230;
+            border-color: #2d2750;
+            color: #a5b4fc;
+        }
+
+        .dark .toc-link.active {
+            color: #c4b5fd;
+            background: rgba(139, 92, 246, 0.1);
+            border-left-color: #8b5cf6;
+            font-weight: 600;
+        }
+
+        .dark .toc-link.active .toc-badge {
+            background: #4c1d95;
+            color: #e9d5ff;
+            border-color: #7c3aed;
+            box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-white dark:bg-[#0a0e1a] text-slate-800 dark:text-[#b8c5d6] font-sans antialiased transition-colors duration-300">
+
+    <button id="theme-toggle"
+        class="fixed top-4 right-4 z-50 p-2.5 rounded-xl bg-slate-100 dark:bg-[#111827] shadow-sm border border-slate-200 dark:border-[#232d45] text-slate-600 dark:text-[#a5b4fc] hover:bg-slate-200 dark:hover:bg-[#1a2035] transition-all">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 4.22a1 1 0 011.415 0l.708.708a1 1 0 01-1.414 1.414l-.708-.708a1 1 0 010-1.414zM16 10a1 1 0 011 1h1a1 1 0 110-2h-1a1 1 0 01-1 1zm-4.22 4.22a1 1 0 010 1.415l-.708.708a1 1 0 01-1.414-1.414l.708-.708a1 1 0 011.414 0zM10 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.22-4.22a1 1 0 01-1.415 0l-.708-.708a1 1 0 011.414 1.414l-.708.708a1 1 0 01-1.414 0zM10 5a5 5 0 100 10 5 5 0 000-10z">
+            </path>
+        </svg>
+    </button>
+
+    <div
+        class="md:hidden fixed top-0 left-0 right-0 h-16 bg-slate-50 dark:bg-[#0d1224] border-b border-slate-200 dark:border-[#2a1f3d] z-40 flex items-center justify-between px-5">
+        <span class="font-bold text-slate-900 dark:text-[#eef2f7]">Insight Report</span>
+        <button id="menu-btn" class="p-2 text-slate-600 dark:text-[#7a8ba0] bg-slate-200 dark:bg-[#1a2035] rounded-lg">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="overlay" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-40 hidden md:hidden transition-opacity">
+    </div>
+
+    <div class="flex min-h-screen pt-16 md:pt-0">
+        <aside id="sidebar"
+            class="fixed inset-y-0 left-0 z-50 w-[280px] bg-slate-50 dark:bg-[#0d1224] border-r border-slate-200 dark:border-[#2a1f3d] transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col h-screen shadow-[4px_0_30px_rgba(0,0,0,0.05)] dark:shadow-[4px_0_30px_rgba(0,0,0,0.5)]">
+            <div
+                class="p-6 border-b border-slate-200 dark:border-[#2a1f3d] bg-gradient-to-br from-indigo-50 to-white dark:from-[rgba(212,160,83,0.06)] dark:to-[rgba(184,146,46,0.03)]">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 dark:from-[#9b7b2f] dark:to-[#d4a053] flex items-center justify-center shadow-md text-white">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-bold text-[0.95rem] text-slate-900 dark:text-[#eef2f7] leading-tight">Insight
+                            Report</div>
+                        <div
+                            class="font-semibold text-[0.68rem] text-indigo-600 dark:text-[#d4a053] tracking-widest uppercase mt-0.5">
+                            Báo Cáo Chuyên Sâu</div>
+                    </div>
+                </div>
+            </div>
+            <nav class="flex-1 overflow-y-auto custom-scrollbar p-3 pb-8 space-y-1.5">
+                <div
+                    class="text-[0.62rem] font-bold text-indigo-500 dark:text-[#818cf8] uppercase tracking-[0.14em] px-3 pt-4 pb-2">
+                    Nội dung</div>
+
+                <a href="#sec-1" class="toc-link active"><span class="toc-badge">01</span><span>Lãnh đạo cuộc bầu
+                        cử</span></a>
+                <a href="#sec-2" class="toc-link"><span class="toc-badge">02</span><span>Quy định mới chế độ đảng
+                        phí</span></a>
+                <a href="#sec-3" class="toc-link"><span class="toc-badge">03</span><span>Kinh tế Việt Nam hai tháng đầu
+                        năm</span></a>
+                <a href="#sec-4" class="toc-link"><span class="toc-badge">04</span><span>Đấu tranh chống phá cuộc bầu
+                        cử</span></a>
+                <a href="#sec-5" class="toc-link"><span class="toc-badge">05</span><span>Nhiệm vụ trọng tâm của Chính
+                        phủ</span></a>
+                <a href="#sec-6" class="toc-link"><span class="toc-badge">06</span><span>Thi hành Luật Tiết
+                        kiệm</span></a>
+                <a href="#sec-7" class="toc-link"><span class="toc-badge">07</span><span>Đổi mới công tác đào tạo
+                        nghề</span></a>
+                <a href="#sec-8" class="toc-link"><span class="toc-badge">08</span><span>Hỗ trợ học sinh khởi
+                        nghiệp</span></a>
+                <a href="#sec-9" class="toc-link"><span class="toc-badge">09</span><span>Hội đồng hòa bình về
+                        Gaza</span></a>
+                <a href="#sec-10" class="toc-link"><span class="toc-badge">10</span><span>Kinh tế thế giới đầu năm
+                        2026</span></a>
+                <a href="#sec-11" class="toc-link"><span class="toc-badge">11</span><span>Xung đột tại Trung
+                        Đông</span></a>
+                <a href="#sec-12" class="toc-link"><span class="toc-badge">12</span><span>Cạnh tranh AI Mỹ -
+                        Trung</span></a>
+                <a href="#sec-13" class="toc-link"><span class="toc-badge">13</span><span>Sự kiện thế giới đáng chú
+                        ý</span></a>
+                <a href="#sec-14" class="toc-link"><span class="toc-badge">14</span><span>Văn bản mới</span></a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 md:ml-[280px] flex flex-col min-h-screen relative">
+            <div
+                class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 dark:from-[#6366f1] dark:via-[#8b5cf6] dark:to-[#6366f1] bg-[length:200%_100%] animate-[gradientShift_4s_ease_infinite]">
+            </div>
+
+            <div class="flex-1 max-w-[780px] mx-auto w-full px-6 py-10 md:px-12 md:py-16">
+                <header class="mb-10 border-b border-slate-200 dark:border-[#232d45] pb-8">
+                    <h1
+                        class="text-3xl md:text-[2.2rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 dark:from-[#f59e0b] dark:via-[#f97316] dark:to-[#ef4444] leading-tight mb-4 tracking-tight pb-1">
+                        Bản tin Thông tin sinh hoạt chi bộ số 4
+                    </h1>
+                    <p class="text-lg text-slate-500 dark:text-[#5a6a80] leading-relaxed">
+                        Cập nhật tình hình trong nước, các chính sách, nghị định mới, kinh tế xã hội hai tháng đầu năm
+                        2026 và các sự kiện đối ngoại thế giới nổi bật.
+                    </p>
+                </header>
+
+                <article id="content-article"
+                    class="prose prose-slate dark:prose-invert max-w-none text-[0.98rem] leading-[1.78] space-y-6">
+                    <img src="https://img.baocaovien.vn//MediaUpload/Org/2026/02/23/165652-23022026_hoi-thi-bao-cao-vien-tuyen-truyen-vien-gioi-toan-quoc-nam-2026-1.png"
+                        class="w-full h-auto rounded-xl my-8 shadow-sm">
+
+                    <p class="font-bold text-lg uppercase">THÔNG TIN TRONG NƯỚC</p>
+
+                    <h2 id="sec-1"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        01. Tiếp tục lãnh đạo cuộc bầu cử đại biểu Quốc hội khóa XVI và bầu cử đại biểu Hội đồng nhân
+                        dân các cấp nhiệm kỳ 2026 - 2031</h2>
+
+                    <p>Ngày 23/02/2026, Bộ Chính trị, Thường trực Ban Bí thư ban hành Kết luận số 03-KL/TW về việc tiếp
+                        tục thực hiện Chỉ thị số 46-CT/TW, ngày 16/5/2025 của Bộ Chính trị về lãnh đạo cuộc bầu cử đại
+                        biểu Quốc hội khóa XVI và bầu cử đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2026 - 2031.</p>
+                    <p>Để cuộc bầu cử đại biểu Quốc hội khóa XVI và bầu cử đại biểu Hội đồng nhân dân các cấp nhiệm kỳ
+                        2026 - 2031 thành công tốt đẹp, Bộ Chính trị yêu cầu các cấp ủy, tổ chức đảng lãnh đạo, chỉ đạo
+                        thực hiện tốt Chỉ thị số 46-CT/TW, ngày 16/5/2025 của Bộ Chính trị về lãnh đạo cuộc bầu cử đại
+                        biểu Quốc hội khóa XVI và bầu cử đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2026 - 2031, trong
+                        đó đặc biệt lưu ý một số nội dung sau:</p>
+                    <p>Lãnh đạo, chỉ đạo thật tốt công tác chuẩn bị nhân sự, bảo đảm phát huy dân chủ gắn với sự lãnh
+                        đạo tập trung, thống nhất của Đảng trong công tác cán bộ; bảo đảm cơ cấu hợp lý về số đại biểu
+                        là người đang công tác ở cơ quan Đảng, Nhà nước, lực lượng vũ trang, Mặt trận Tổ quốc; bảo đảm
+                        tỉ lệ người ứng cử là phụ nữ và người dân tộc thiểu số theo đúng quy định; có tỉ lệ hợp lý đại
+                        biểu các tôn giáo, đại biểu tái cử, đại biểu trẻ tuổi, các nhà khoa học, trí thức, văn nghệ sĩ,
+                        đại biểu xuất thân từ công nhân, nông dân, doanh nhân và các hiệp hội, nghiệp đoàn trong sản
+                        xuất, kinh doanh.</p>
+                    <p>Lãnh đạo, chỉ đạo thực hiện bầu đủ số lượng đại biểu Quốc hội, đại biểu Hội đồng nhân dân các
+                        cấp, trong đó cần quán triệt chỉ đạo của Bộ Chính trị về việc bảo đảm chất lượng đại biểu và
+                        tăng số lượng đại biểu hoạt động chuyên trách (dự kiến có 145 đại biểu Quốc hội hoạt động chuyên
+                        trách ở Trung ương và 55 đại biểu Quốc hội hoạt động chuyên trách tại địa phương).</p>
+                    <p>Quan tâm, hỗ trợ tối đa cho các ứng cử viên do Trung ương giới thiệu về ứng cử đại biểu Quốc hội
+                        tại địa phương (trong số 217 người ứng cử đại biểu Quốc hội do các cơ quan Trung ương giới
+                        thiệu, có nhiều ứng cử viên trẻ từ các cơ quan của Quốc hội, các ban, bộ, ngành, Mặt trận Tổ
+                        quốc và các đoàn thể ở Trung ương được giới thiệu lần đầu tham gia ứng cử đại biểu Quốc hội) để
+                        các ứng cử viên xây dựng chương trình hành động thực chất, bám sát cơ sở, cung cấp thông tin,
+                        tài liệu về tình hình kinh tế - xã hội, phong tục tập quán, đặc điểm dân cư nơi ứng cử, đáp ứng
+                        tốt nhất nguyện vọng của cử tri, thực hiện tốt các cuộc tiếp xúc cử tri trong vận động tranh cử;
+                        có các hình thức phù hợp tuyên truyền về tiểu sử để cử tri nắm bắt được thông tin tiểu sử và quá
+                        trình công tác, trình độ, năng lực của các ứng cử viên; nghiên cứu, sắp xếp, phân bổ các ứng cử
+                        viên do Trung ương giới thiệu về các đơn vị bầu cử, khu vực bỏ phiếu có sự hài hòa, hợp lý, phát
+                        huy được ưu điểm, lợi thế của mỗi ứng cử viên, tạo được niềm tin, sự ủng hộ và tín nhiệm cao của
+                        cử tri nơi ứng cử.</p>
+                    <p>Làm tốt công tác bảo đảm an ninh, trật tự; công tác thông tin, tuyên truyền về ý nghĩa và tầm
+                        quan trọng của cuộc bầu cử, nhất là địa bàn vùng sâu, vùng xa, vùng đồng bào dân tộc thiểu số;
+                        phát huy quyền làm chủ của nhân dân, tạo điều kiện thuận lợi để mọi công dân thực hiện đầy đủ
+                        quyền ứng cử, bầu cử theo quy định của pháp luật.</p>
+                    <p>Thực hiện nghiêm chế độ thông tin, báo cáo; khi có yêu cầu của Hội đồng Bầu cử quốc gia phải kịp
+                        thời báo cáo, cung cấp đầy đủ, chính xác thông tin, đúng tiến độ, không để chậm trễ, thiếu sót,
+                        bảo đảm phục vụ công tác chỉ đạo, điều hành chung và xử lý kịp thời các vấn đề phát sinh.</p>
+
+                    <img src="https://media-dienbien.baodienbienphu.vn/45_2026-03-04-35.jpg"
+                        class="w-full h-auto rounded-xl my-8 shadow-sm">
+
+                    <h2 id="sec-2"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        02. Quy định mới chế độ đảng phí và quản lý, sử dụng thẻ đảng viên</h2>
+
+                    <p>Ngày 03/02/2026, Bộ Chính trị ban hành Quy định số 01-QĐ/TW về chế độ đảng phí; quy định cụ thể
+                        việc đóng đảng phí của đảng viên; nguyên tắc thu, nộp, phân bổ, quản lý và sử dụng đảng phí của
+                        tổ chức đảng các cấp; áp dụng đối với toàn bộ đảng viên, tổ chức, cơ quan, đơn vị của Đảng và
+                        các tổ chức, cá nhân có liên quan.</p>
+                    <p>Quy định khẳng định, đóng đảng phí là nhiệm vụ, trách nhiệm của mỗi đảng viên theo Điều lệ Đảng.
+                        Đảng viên phải báo cáo trung thực với chi bộ về thu nhập làm căn cứ xác định mức đóng. Đảng viên
+                        trong nước (kể cả đảng viên dự bị) thực hiện đóng đảng phí hằng tháng qua Cổng Dịch vụ công Quốc
+                        gia hoặc nộp trực tiếp bằng tiền mặt cho chi bộ; lộ trình thực hiện trên môi trường số theo
+                        hướng dẫn của Văn phòng Trung ương Đảng. Trừ các trường hợp bất khả kháng, việc thu, nộp đảng
+                        phí của tổ chức đảng các cấp đều thực hiện trên Cổng Dịch vụ công Quốc gia nhằm bảo đảm công
+                        khai, minh bạch, thuận tiện và hiện đại hóa công tác quản lý tài chính đảng.</p>
+                    <p>Khuyến khích đảng viên tự nguyện đóng cao hơn mức quy định; đồng thời nêu rõ, trường hợp đảng
+                        viên không đóng đảng phí 3 tháng trong năm mà không có lý do chính đáng thì chi bộ xem xét, đề
+                        nghị cấp ủy có thẩm quyền xóa tên khỏi danh sách đảng viên. Các tổ chức đảng được mở tài khoản
+                        ngân hàng để quản lý, sử dụng tiền đảng phí; chủ động lựa chọn hình thức quản lý số dư bảo đảm
+                        an toàn, chặt chẽ, đúng quy định pháp luật.</p>
+                    <p>Về mức đóng, đảng viên tham gia bảo hiểm xã hội bắt buộc đóng hằng tháng bằng 1% tiền lương làm
+                        căn cứ đóng bảo hiểm xã hội của tháng trước; trường hợp nghỉ ốm đau, thai sản đóng 1% mức trợ
+                        cấp do cơ quan bảo hiểm xã hội chi trả. Đảng viên hưởng lương hưu đóng 0,5% mức lương hưu; học
+                        sinh, sinh viên đóng 5.000 đồng/tháng.</p>
+                    <p>Đối với đảng viên chưa đến tuổi nghỉ hưu, mức đóng tính theo tỷ lệ lương tối thiểu vùng: 0,3%
+                        giai đoạn 2026 - 2027 và 0,5% từ năm 2028; đảng viên đã đủ tuổi nghỉ hưu nhưng chưa hưởng lương
+                        hưu đóng mức thấp hơn, tương ứng 0,2% và 0,3%.</p>
+                    <p>Đảng viên là người có công với cách mạng, hưởng trợ cấp bệnh binh, mất sức lao động hoặc trợ cấp
+                        bảo trợ xã hội chỉ đóng bằng 50% mức của nhóm tương ứng. Đảng viên ở nước ngoài làm việc tại cơ
+                        quan đại diện Việt Nam, phu nhân, phu quân đi theo nhiệm kỳ, lưu học sinh theo diện ngân sách
+                        hoặc hiệp định đóng bằng 1% sinh hoạt phí hằng tháng. Các trường hợp khác ở nước ngoài thực hiện
+                        theo mức do cơ quan có thẩm quyền quyết định, tương đương từ 30.000 đến 400.000 đồng/tháng.</p>
+                    <p>Các trường hợp được miễn, giảm đảng phí, như đảng viên có từ 50 năm tuổi đảng trở lên; người
+                        hưởng trợ cấp hưu trí xã hội; đảng viên thuộc hộ nghèo, cận nghèo hoặc mắc bệnh hiểm nghèo. Các
+                        trường hợp khó khăn khác có thể được xem xét giảm 30%, 50% hoặc 70% mức đóng trong thời gian tối
+                        đa 12 tháng. Đồng thời, bổ sung quy định về chậm đóng, đóng trước đảng phí và không thu đảng phí
+                        trong thời gian đảng viên bị đình chỉ sinh hoạt do bị tạm giam hoặc bị xử lý theo bản án của tòa
+                        án.</p>
+                    <p>Quy định số 01-QĐ/TW có hiệu lực thi hành từ ngày 01/02/2026, thay thế Quy định ban hành kèm theo
+                        Quyết định số 342-QĐ/TW năm 2010. Đảng ủy từ cấp cơ sở trở lên và ủy ban kiểm tra các cấp có
+                        trách nhiệm hướng dẫn, kiểm tra, giám sát thường xuyên việc thực hiện, bảo đảm chế độ đảng phí
+                        được triển khai nghiêm túc, thống nhất trong toàn Đảng.</p>
+                    <p>Ngày 09/02/2026, Bộ Chính trị, Ban Bí thư đã ký ban hành Quy định số 06-QĐ/TW về quản lý và sử
+                        dụng thẻ đảng viên; quy định về trách nhiệm, thẩm quyền của các cấp uỷ, tổ chức đảng, cơ quan
+                        tham mưu, giúp việc của cấp uỷ và đảng viên trong việc quản lý, sử dụng và xử lý vi phạm quy
+                        định về quản lý, sử dụng thẻ đảng viên.</p>
+                    <p>Theo Quy định, quản lý thẻ đảng viên là các hoạt động cấp mới, cấp lại thẻ đảng viên; sản xuất,
+                        in, huỷ thẻ đảng viên; hướng dẫn, theo dõi, kiểm tra, giám sát và xử lý vi phạm quy định về quản
+                        lý, sử dụng thẻ đảng viên của cấp uỷ, tổ chức đảng, cơ quan tham mưu, giúp việc của cấp uỷ các
+                        cấp. Thẻ đảng viên được dùng để biểu quyết trong sinh hoạt đảng, trong đại hội đảng các cấp (trừ
+                        các trường hợp biểu quyết bằng phiếu kín); thực hiện các thủ tục hành chính của Đảng trên môi
+                        trường điện tử theo quy định. Việc quản lý và sử dụng thẻ đảng viên bảo đảm chặt chẽ, đúng quy
+                        định. Nghiêm cấm việc làm giả thẻ đảng viên.</p>
+                    <p>Về trách nhiệm của đảng viên, Quy định nêu rõ: Đảng viên phải bảo quản, giữ gìn cẩn thận thẻ đảng
+                        viên. Đảng viên sử dụng thẻ đảng viên đúng quy định; không cho người khác mượn, sử dụng thẻ đảng
+                        viên; không được dùng thẻ đảng viên để cho thuê, chuyển nhượng, thế chấp, cầm cố vay, mượn tiền,
+                        tài sản; không được đăng tải hình ảnh thẻ đảng viên lên mạng xã hội với mục đích xấu hoặc không
+                        phải thẻ của mình; không được tự huỷ thẻ đảng viên. Nếu thẻ đảng viên bị sai, bị hỏng, bị mất
+                        phải kịp thời báo cáo bằng văn bản với cấp uỷ, chi bộ quản lý trực tiếp để xem xét, đề nghị việc
+                        cấp lại thẻ đảng viên theo quy định.</p>
+                    <p>Đảng viên xin ra khỏi Đảng, bị khai trừ, xóa tên và đưa ra khỏi Đảng bằng các hình thức khác phải
+                        nộp lại thẻ đảng viên cho chi bộ. Đảng viên từ trần thì gia đình của đảng viên được giữ lại thẻ
+                        đảng viên và không được sử dụng thẻ đảng viên trái với Quy định này. Đảng viên phát hiện thẻ
+                        đảng viên của đảng viên khác bị thất lạc hoặc có những hành vi sử dụng trái với Quy định này
+                        phải kịp thời báo cáo cấp uỷ, chi bộ quản lý trực tiếp để báo cáo cấp có thẩm quyền xử lý.</p>
+                    <p>Chi bộ, cấp ủy cơ sở có trách nhiệm quán triệt, hướng dẫn đảng viên quản lý, sử dụng thẻ đảng
+                        viên đúng quy định; đề nghị cấp ủy cấp trên trực tiếp của tổ chức cơ sở đảng (hoặc đảng ủy được
+                        giao quyền cấp trên cơ sở, đảng ủy được thí điểm giao quyền cấp trên cơ sở, đảng ủy cơ sở được
+                        ủy quyền kết nạp đảng viên) cấp mới, cấp lại thẻ đảng viên cho đảng viên theo quy định; tổ chức
+                        phát thẻ đảng viên tại cuộc họp chi bộ gần nhất. Định kỳ hằng năm tổ chức kiểm tra thẻ đảng viên
+                        tại cuộc họp kiểm điểm, đánh giá, xếp loại chất lượng đảng viên cuối năm; báo cáo cấp uỷ cấp
+                        trên trực tiếp của tổ chức cơ sở đảng (hoặc đảng uỷ được giao quyền cấp trên cơ sở, đảng ủy được
+                        thí điểm giao quyền cấp trên cơ sở, đảng ủy cơ sở được ủy quyền kết nạp đảng viên) kết quả kiểm
+                        tra.</p>
+                    <p>Chi bộ, cấp ủy cơ sở có trách nhiệm tiếp nhận, xác minh, báo cáo kịp thời các trường hợp mất thẻ,
+                        hỏng thẻ hoặc sử dụng thẻ đảng viên không đúng quy định lên cấp ủy cấp trên trực tiếp; thu lại
+                        thẻ đảng viên khi đảng viên xin ra khỏi Đảng, bị khai trừ, xóa tên và đưa ra khỏi Đảng bằng các
+                        hình thức khác hoặc thẻ đảng viên bị sai, bị hỏng và nộp lên cấp ủy cấp trên trực tiếp của tổ
+                        chức cơ sở đảng (hoặc đảng ủy được giao quyền cấp trên cơ sở, đảng ủy được thí điểm giao quyền
+                        cấp trên cơ sở, đảng ủy cơ sở được ủy quyền kết nạp đảng viên). Thực hiện nghiệp vụ về phát,
+                        quản lý thẻ đảng viên theo hướng dẫn của Ban Tổ chức Trung ương; báo cáo định kỳ hoặc khi có yêu
+                        cầu về tình hình quản lý, sử dụng thẻ đảng viên.</p>
+                    <p>Các trường hợp xử lý vi phạm gồm: Đảng viên tự ý trả thẻ đảng viên hoặc tự hủy thẻ đảng viên bị
+                        xóa tên đảng viên theo quy định; Đảng viên sử dụng thẻ đảng viên sai quy định; làm mất thẻ đảng
+                        viên không có lý do chính đáng; để người khác sử dụng thẻ đảng viên thì tùy theo mức độ vi phạm
+                        bị xử lý theo quy định của Đảng.</p>
+                    <p>Tổ chức đảng, đảng viên phát hiện những hành vi trái với Quy định này mà không kịp thời tố giác
+                        hoặc bao che thì tuỳ theo mức độ vi phạm bị xử lý theo quy định của Đảng. Tổ chức, cá nhân làm
+                        giả thẻ đảng viên thì tuỳ mức độ vi phạm bị xử lý theo quy định của Đảng, pháp luật của Nhà
+                        nước.</p>
+
+                    <img src="https://cly.1cdn.vn/2025/12/31/kinh-te-viet-nam-17559395522121201273353-1756005474.jpg"
+                        class="w-full h-auto rounded-xl my-8 shadow-sm">
+                    <h2 id="sec-3"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        03. Một số nét về tình hình kinh tế Việt Nam hai tháng đầu năm 2026 và nhiệm vụ thời gian tới
+                    </h2>
+
+                    <p>Trong hai tháng đầu năm 2026, kinh tế Việt Nam tiếp tục duy trì xu hướng ổn định trên nhiều lĩnh
+                        vực, tạo nền tảng cho việc thực hiện các mục tiêu tăng trưởng của năm.</p>
+                    <p>Khu vực nông, lâm nghiệp và thủy sản duy trì ổn định. Sản xuất nông nghiệp trong tháng 2 tập
+                        trung vào gieo trồng và chăm sóc lúa đông xuân cùng các loại cây màu trên cả nước. Hoạt động
+                        chăn nuôi nhìn chung ổn định nhưng có sự phân hóa: chăn nuôi trâu, bò tiếp tục giảm do hiệu quả
+                        kinh tế thấp và chi phí đầu vào cao; trong khi chăn nuôi lợn phục hồi và tái đàn sau Tết. Công
+                        tác phòng, chống dịch bệnh tiếp tục được tăng cường; đến cuối tháng 02/2026 cả nước không còn
+                        dịch tai xanh và lở mồm long móng, tuy nhiên dịch cúm gia cầm vẫn xuất hiện cục bộ tại một số
+                        địa phương và dịch tả lợn châu Phi vẫn còn tại 15 địa phương chưa qua 21 ngày.</p>
+                    <p>Lâm nghiệp duy trì phát triển ổn định; thủy sản tiếp tục tăng trưởng khá nhờ giá cá tra và tôm ở
+                        mức thuận lợi. Tính chung hai tháng đầu năm 2026, tổng sản lượng thủy sản đạt 1,279 triệu tấn,
+                        tăng 2,9% so với cùng kỳ năm trước.</p>
+                    <p>Khu vực công nghiệp - xây dựng tiếp tục duy trì đà tăng trưởng. Tính chung hai tháng đầu năm
+                        2026, chỉ số sản xuất công nghiệp (IIP) tăng 10,4%, cao hơn mức tăng 7,5% của cùng kỳ năm 2025,
+                        cho thấy hoạt động sản xuất công nghiệp tiếp tục phục hồi và mở rộng.</p>
+                    <p>Khu vực dịch vụ duy trì xu hướng khởi sắc nhờ nhu cầu tiêu dùng trong dịp Tết Nguyên đán và sự
+                        phục hồi của du lịch. Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá hiện hành
+                        hai tháng đầu năm 2026 ước đạt 1.236,6 nghìn tỷ đồng, tăng 7,9% so với cùng kỳ năm trước; nếu
+                        loại trừ yếu tố giá tăng 4,5%. Một số lĩnh vực dịch vụ tăng mạnh như lưu trú, ăn uống tăng 9,1%
+                        và du lịch lữ hành tăng 12,2%. Riêng tháng 02/2026, tổng mức bán lẻ hàng hóa và doanh thu dịch
+                        vụ tiêu dùng đạt 613,7 nghìn tỷ đồng, tăng 8,5% so với cùng kỳ năm trước.</p>
+                    <p>Du lịch quốc tế tiếp tục là điểm sáng của khu vực dịch vụ. Nhờ chính sách thị thực thuận lợi,
+                        tăng cường quảng bá và đa dạng hóa sản phẩm du lịch, lượng khách quốc tế đến Việt Nam tăng mạnh.
+                        Tính chung hai tháng đầu năm, khách quốc tế đến Việt Nam đạt gần 4,7 triệu lượt, tăng 18,1% so
+                        với cùng kỳ.</p>
+                    <p>Hoạt động đầu tư tiếp tục được đẩy mạnh, đóng vai trò quan trọng trong thúc đẩy tăng trưởng. Ngay
+                        từ đầu năm 2026, các bộ, ngành và địa phương đã tích cực triển khai vốn đầu tư công, đặc biệt
+                        đối với các dự án chuyển tiếp và các công trình hạ tầng trọng điểm. Tính chung hai tháng đầu
+                        năm, vốn đầu tư thực hiện từ nguồn ngân sách nhà nước ước đạt 83,5 nghìn tỷ đồng, bằng 9,4% kế
+                        hoạch năm và tăng 11,5% so với cùng kỳ năm trước.</p>
+                    <p>Vốn đầu tư nước ngoài tiếp tục giữ vai trò quan trọng. Tính đến ngày 28/02/2026, tổng vốn FDI
+                        đăng ký vào Việt Nam (bao gồm vốn đăng ký mới, điều chỉnh và góp vốn mua cổ phần) đạt 6,03 tỷ
+                        USD, giảm 12,6% so với cùng kỳ năm trước. Tuy nhiên, vốn FDI thực hiện đạt 3,21 tỷ USD, tăng
+                        8,8% so với cùng kỳ và là mức cao nhất của hai tháng đầu năm trong vòng 5 năm gần đây.</p>
+                    <p>Hoạt động thương mại quốc tế tiếp tục duy trì quy mô lớn nhưng cán cân thương mại chuyển sang
+                        nhập siêu. Tính chung hai tháng đầu năm, tổng kim ngạch xuất nhập khẩu đạt 155,7 tỷ USD, tăng
+                        22,2% so với cùng kỳ; trong đó xuất khẩu đạt 76,36 tỷ USD, tăng 18,3%, và nhập khẩu đạt 79,34 tỷ
+                        USD, tăng 26,3%, khiến cán cân thương mại chuyển sang nhập siêu khoảng 2,98 tỷ USD.</p>
+                    <p>Về thị trường thương mại, Mỹ tiếp tục là thị trường xuất khẩu lớn nhất của Việt Nam với 23,8 tỷ
+                        USD, trong khi Trung Trung Quốc là thị trường nhập khẩu lớn nhất với 31,9 tỷ USD. Việt Nam xuất
+                        siêu sang Mỹ 20,4 tỷ USD (tăng 20,8%), xuất siêu sang EU 6,7 tỷ USD (tăng 6,5%); đồng thời nhập
+                        siêu từ Trung Quốc 20,9 tỷ USD (tăng 35,7%), từ Hàn Quốc 6,5 tỷ USD (tăng 41,5%) và từ ASEAN 2,6
+                        tỷ USD (tăng 20,7%).</p>
+                    <p>Về giá cả, chỉ số giá tiêu dùng (CPI) tháng 02/2026 tăng 1,14% so với tháng trước, chủ yếu do nhu
+                        cầu mua sắm và đi lại tăng trong dịp Tết Nguyên đán Bính Ngọ. So với tháng 12/2025, CPI tăng
+                        1,19% và tăng 3,35% so với cùng kỳ năm trước. Bình quân hai tháng đầu năm 2026, CPI tăng 2,94%,
+                        trong khi lạm phát cơ bản tăng 3,47%, cho thấy lạm phát vẫn trong tầm kiểm soát.</p>
+                    <p>Hoạt động thu - chi ngân sách nhà nước tiếp tục ổn định. Hai tháng đầu năm 2026, tổng thu ngân
+                        sách nhà nước ước đạt 601,3 nghìn tỷ đồng, bằng 23,8% dự toán năm và tăng 13,1% so với cùng kỳ.
+                        Thu nội địa đạt 558,1 nghìn tỷ đồng, bằng 25,4% dự toán và tăng 15,0%; thu từ dầu thô 5,1 nghìn
+                        tỷ đồng, bằng 11,9% dự toán nhưng giảm 42,2%; thu cân đối từ hoạt động xuất nhập khẩu 38,0 nghìn
+                        tỷ đồng, bằng 13,7% dự toán và tăng 1,2%.</p>
+                    <p>Tổng chi ngân sách nhà nước hai tháng đầu năm ước đạt 311,0 nghìn tỷ đồng, bằng 9,8% dự toán năm
+                        và tăng 11,0% so với cùng kỳ. Trong đó chỉ thường xuyên 241,0 nghìn tỷ đồng (bằng 13,3% dự toán,
+                        tăng 14,8%); chi đầu tư phát triển 42,5 nghìn tỷ đồng (bằng 3,8% dự toán); chi trả nợ lãi 27,1
+                        nghìn tỷ đồng (bằng 22,3% dự toán, tăng 8,1%).</p>
+
+                    <blockquote>
+                        Tại phiên họp Chính phủ ngày 04/3/2026, Thủ tướng Chính phủ Phạm Minh Chính đánh giá “kinh tế vĩ
+                        mô cơ bản ổn định; lạm phát được kiểm soát; các cân đối lớn được bảo đảm”.
+                    </blockquote>
+
+                    <p>Các chỉ số kinh tế quan trọng cho thấy hoạt động sản xuất kinh doanh đang phục hồi và mở rộng,
+                        trong đó các động lực tăng trưởng truyền thống như đầu tư, xuất khẩu và sản xuất công nghiệp
+                        tiếp tục được duy trì. Tuy nhiên, nền kinh tế vẫn đối mặt với một số thách thức như biến động
+                        của kinh tế thế giới có thể tạo áp lực đối với lạm phát, tỷ giá, lãi suất và giá vàng; hoạt động
+                        sản xuất - kinh doanh của một bộ phận doanh nghiệp còn khó khăn và số doanh nghiệp rút lui khỏi
+                        thị trường vẫn ở mức cao. Bên cạnh đó, quá trình sắp xếp, tinh gọn tổ chức bộ máy và vận hành
+                        chính quyền địa phương hai cấp vẫn đang tiếp tục hoàn thiện.</p>
+                    <p>Thời gian tới, dự báo kinh tế thế giới tiếp tục đối mặt với nhiều biến động phức tạp và khó
+                        lường; thương mại toàn cầu tiềm ẩn nhiều rủi ro, nguy cơ tái diễn đứt gãy chuỗi cung ứng. Trong
+                        bối cảnh đó, để thực hiện mục tiêu tăng trưởng kinh tế của Việt Nam từ 10% trở lên, tại Cuộc họp
+                        với Hội đồng Tư vấn chính sách, thảo luận về tình hình kinh tế - xã hội tháng 2, hai tháng năm
+                        2026, các diễn biến mới trên thế giới tác động tới Việt Nam (ngày 07/3/2026), Thủ tướng Chính
+                        phủ Phạm Minh Chính đã chỉ đạo thực hiện các nhóm giải pháp trọng tâm trong thời gian tới như
+                        sau:</p>
+                    <p>Thứ nhất, yêu cầu không để thiếu xăng dầu, thiếu điện, thiếu năng lượng; đồng thời xác định đây
+                        cũng là cơ hội để chuyển đổi năng lượng xanh, khai thác tiềm năng khác biệt, cơ hội nổi trội,
+                        lợi thế cạnh tranh của đất nước.</p>
+                    <p>Thứ hai, tiếp tục điều hành đồng bộ, linh hoạt và hiệu quả các chính sách kinh tế vĩ mô; đặc biệt
+                        chú trọng sự phối hợp chặt chẽ giữa chính sách tài khóa và chính sách tiền tệ. Điều hành chính
+                        sách tiền tệ chủ động, linh hoạt, kịp thời và hiệu quả, phù hợp với thực tiễn, ổn định tỉ giá,
+                        lãi suất, nâng cao dự trữ quốc gia; góp phần ổn định kinh tế vĩ mô, kiểm soát lạm phát, thúc đẩy
+                        tăng trưởng bảo đảm các cân đối lớn của nền kinh tế.</p>
+                    <p>Thứ ba, phấn đấu tự chủ về năng lượng, tự chủ về nguồn lực quốc gia, từ đó phân cấp, phân quyền
+                        cho các địa phương.</p>
+                    <p>Thứ tư, tháo gỡ các khó khăn, vướng mắc; tập trung xử lý các dự án tồn đọng, tháo gỡ vướng mắc
+                        cho hộ kinh doanh; các điểm nghẽn về đất đai, điện, tài nguyên; huy động đầu tư toàn xã hội tăng
+                        khoảng 5% so với năm 2025; đẩy mạnh đầu tư công.</p>
+                    <p>Thứ năm, đẩy mạnh đào tạo nguồn nhân lực chất lượng cao, xác định con người là trung tâm, chủ
+                        thể, là nhân tố quyết định vận mệnh đất nước, quyết định các chuyển đổi, sự thay đổi trạng thái
+                        và đầu tư cho con người là đầu tư cho sự phát triển.</p>
+                    <p>Thứ sáu, hoàn thiện thể chế kiến tạo, đổi mới, tháo gỡ được những điểm nghẽn hiện nay và đặc biệt
+                        là khuyến khích đổi mới sáng tạo; giảm chi phí đầu vào cho người dân, doanh nghiệp bằng đẩy mạnh
+                        phát triển hạ tầng, giảm chi phí tuân thủ qua cải cách thủ tục hành chính, cải thiện môi trường
+                        kinh doanh, tăng sức cạnh tranh của doanh nghiệp, sản phẩm và nền kinh tế.</p>
+
+                    <img src="https://congan.hungyen.gov.vn//uploads/files/NH1LUN~1.PNG"
+                        class="w-full h-auto rounded-xl my-8 shadow-sm">
+                    <h2 id="sec-4"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        04. Nhận diện và đấu tranh với những âm mưu, phương thức, thủ đoạn chống phá cuộc bầu cử đại
+                        biểu Quốc hội khóa XVI và Hội đồng nhân dân các cấp nhiệm kỳ 2026 - 2031 trên không gian mạng
+                    </h2>
+
+                    <p>Cuộc bầu cử đại biểu Quốc hội khóa XVI và đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2026 - 2031
+                        là sự kiện chính trị có ý nghĩa đặc biệt quan trọng đối với đời sống chính trị - xã hội của đất
+                        nước ta. Đây không chỉ là hoạt động hiến định nhằm hình thành các cơ quan quyền lực nhà nước ở
+                        trung ương và địa phương, mà còn là cơ chế để Nhân dân thực hiện quyền làm chủ, trực tiếp lựa
+                        chọn những đại biểu tiêu biểu đại diện cho ý chí và nguyện vọng của mình.</p>
+                    <p>Trong suốt quá trình xây dựng và phát triển đất nước, các kỳ bầu cử Quốc hội và Hội đồng nhân dân
+                        ở Việt Nam luôn được tổ chức nghiêm túc, đúng pháp luật, bảo đảm tính dân chủ, công khai và minh
+                        bạch. Tỷ lệ cử tri tham gia bầu cử qua các nhiệm kỳ luôn ở mức cao, phản ánh sự quan tâm của
+                        Nhân dân đối với đời sống chính trị cũng như niềm tin đối với các thiết chế dân chủ của Nhà
+                        nước. Tuy nhiên, cùng với sự phát triển mạnh mẽ của công nghệ thông tin và mạng xã hội, không
+                        gian mạng đã trở thành một môi trường truyền thông phức tạp, nơi các thông tin đa chiều được lan
+                        truyền với tốc độ nhanh chóng. Trong bối cảnh đó, các thế lực thù địch, tổ chức chống đối và một
+                        số cá nhân cực đoan thường lợi dụng môi trường mạng để phát tán thông tin sai lệch, xuyên tạc về
+                        các sự kiện chính trị quan trọng của đất nước, trong đó có các kỳ bầu cử Quốc hội và Hội đồng
+                        nhân dân các cấp.</p>
+                    <p>Việc nhận diện rõ các phương thức, thủ đoạn chống phá trên không gian mạng có ý nghĩa quan trọng
+                        trong việc bảo vệ tính nghiêm túc của quá trình bầu cử, đồng thời góp phần củng cố niềm tin của
+                        Nhân dân đối với hệ thống chính trị và các thiết chế dân chủ.</p>
+
+                    <h3>(1) Nhận diện các chiến dịch thông tin chống phá bầu cử trên không gian mạng</h3>
+                    <p>Các thông tin sai lệch liên quan đến bầu cử trên không gian mạng thường không phải là hiện tượng
+                        ngẫu nhiên mà là một phần trong chiến lược truyền thông có chủ đích của các tổ chức chống đối.
+                        Mục tiêu của các chiến dịch này là tác động đến nhận thức xã hội, gây hoang mang trong dư luận
+                        và làm suy giảm niềm tin của người dân đối với hệ thống chính trị.</p>
+                    <p>Trong những năm gần đây, cùng với sự phát triển của công nghệ số, các chiến dịch truyền thông
+                        chống phá ngày càng trở nên tinh vi và có tổ chức hơn. Các đối tượng thường sử dụng nhiều công
+                        cụ công nghệ mới như video deepfake, hình ảnh cắt ghép, nội dung do trí tuệ nhân tạo tạo ra,
+                        cũng như mạng lưới các tài khoản ẩn danh hoặc tài khoản giả để lan truyền thông tin sai lệch.
+                        Những nội dung này thường được thiết kế theo hướng tạo cảm giác “chân thực” ảo, khiến người đọc
+                        khó phân biệt giữa thông tin thật và giả. Khi một thông tin sai lệch được lặp lại nhiều lần trên
+                        nhiều nền tảng khác nhau, nó có thể tạo ra hiệu ứng tâm lý khiến người tiếp nhận tin rằng đó là
+                        thông tin đáng tin cậy.</p>
+                    <p>Qua khảo sát các nguồn thông tin trên mạng xã hội và một số trang truyền thông nước ngoài, có thể
+                        nhận diện một số nhóm chủ thể thường tham gia phát tán thông tin xuyên tạc liên quan đến bầu cử.
+                        Trước hết là các tổ chức chống đối chính trị ở nước ngoài thường xuyên đăng tải các bài viết
+                        hoặc video nhằm phủ nhận tính hợp pháp của hệ thống chính trị Việt Nam. Bên cạnh đó là một số
+                        trang truyền thông nước ngoài có cách tiếp cận thiên lệch khi bình luận về các sự kiện chính trị
+                        tại Việt Nam. Ngoài ra, trên mạng xã hội còn xuất hiện một số tài khoản cá nhân cực đoan thường
+                        xuyên đăng tải các bài viết mang tính suy diễn hoặc chưa được kiểm chứng nhằm gây hoài nghi
+                        trong dư luận.</p>
+                    <p>Một số mạng lưới tài khoản ẩn danh còn sử dụng công nghệ để tạo ra các nội dung giả mạo nhằm gia
+                        tăng tốc độ lan truyền của thông tin sai lệch. Sự phối hợp giữa các chủ thể này đã hình thành
+                        một hệ sinh thái truyền thông chống phá, trong đó mỗi nhóm đóng một vai trò khác nhau trong việc
+                        sản xuất, khuếch tán và lan truyền thông tin xuyên tạc.</p>
+
+                    <h3>(2) Các dạng thông tin xuyên tạc phổ biến liên quan đến cuộc bầu cử</h3>
+                    <p>Qua phân tích các nội dung lan truyền trên không gian mạng, có thể nhận thấy các thông tin xuyên
+                        tạc về cuộc bầu cử Quốc hội khóa XVI và đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2026 - 2031
+                        tập trung vào một số nhóm nội dung chủ yếu:</p>
+                    <p>Các luận điệu phủ nhận bản chất dân chủ của cuộc bầu cử. Một số bài viết cố tình cho rằng bầu cử
+                        ở Việt Nam chỉ mang tính hình thức hoặc đã được “sắp đặt trước”. Những lập luận này thường bỏ
+                        qua thực tế rằng quy trình bầu cử ở Việt Nam được tiến hành theo các quy định chặt chẽ của pháp
+                        luật, với sự tham gia của nhiều tổ chức chính trị - xã hội và sự giám sát của cử tri.</p>
+                    <p>Các bài viết bôi nhọ hoặc hạ thấp uy tín của các ứng cử viên. Những nội dung này thường được
+                        trình bày dưới dạng “nguồn tin nội bộ” hoặc “thông tin riêng", khiến người đọc dễ nhầm tưởng
+                        rằng đó là thông tin xác thực. Trong nhiều trường hợp, nội dung chỉ dựa trên suy đoán hoặc các
+                        thông tin bị cắt xén khỏi bối cảnh.</p>
+                    <p>Bên cạnh đó, một số tổ chức và cá nhân cực đoan còn kêu gọi tẩy chay bầu cử thông qua các bài
+                        viết hoặc video trên mạng xã hội với nội dung khuyến khích người dân không tham gia bỏ phiếu'.
+                        Những lời kêu gọi này thường đi kèm với các lập luận mang tính kích động cảm xúc nhưng thiếu cơ
+                        sở pháp lý và không phản ánh đầy đủ quyền cũng như nghĩa vụ công dân. Ngoài ra, một số bài viết
+                        còn cố tình khai thác các sự việc cá biệt xảy ra trong quá trình chuẩn bị bầu cử, sau đó thổi
+                        phồng hoặc suy diễn thành vấn đề mang tính hệ thống. Đây là một thủ đoạn truyền thông phổ biến
+                        nhằm tạo ra cảm giác rằng tình hình nghiêm trọng hơn so với thực tế.</p>
+                    <p>Các luận điệu xuyên tạc, sai lệch các thế lực thù địch sử dụng trong chiến dịch truyền thông xuất
+                        hiện trên mạng xã hội, blog cá nhân và một số trang truyền thông thiếu thiện chí như: “Không nên
+                        đi bỏ phiếu vì bầu cử không có ý nghĩa”; “Tẩy chay bầu cử là cách thể hiện quan điểm chính trị”;
+                        “Cử tri không thực sự quan tâm đến bầu cử ; Tỷ lệ cử tri tham gia bầu cử bị thổi phồng ...</p>
+                    <p>Trong bối cảnh công nghệ số phát triển mạnh mẽ, các nội dung giả mạo như hình ảnh cắt ghép, video
+                        chỉnh sửa hoặc ảnh chụp màn hình giả cũng được sử dụng để lan truyền thông tin sai lệch. Do đặc
+                        điểm trực quan của hình ảnh và video, những nội dung này thường có sức lan truyền mạnh và dễ gây
+                        hiểu nhầm đối với người tiếp nhận thông tin.</p>
+
+                    <h3>(3) Phương thức và thủ đoạn truyền thông chống phá trên không gian mạng</h3>
+                    <p>Các chiến dịch truyền thông chống phá bầu cử trên không gian mạng thường được tổ chức theo nhiều
+                        phương thức khác nhau nhằm tạo ra hiệu ứng lan truyền rộng rãi. Một trong những thủ đoạn phổ
+                        biến là việc lặp lại cùng một nội dung sai lệch trên nhiều nền tảng khác nhau để tạo cảm giác
+                        rằng đó là thông tin phổ biến và đáng tin cậy. Khi một nội dung được chia sẻ nhiều lần, người
+                        tiếp nhận có thể nhầm tưởng rằng đó là quan điểm chung của xã hội.</p>
+                    <p>Một phương thức khác là cắt ghép hoặc trích dẫn thông tin ngoài bối cảnh nhằm làm thay đổi ý
+                        nghĩa của nội dung ban đầu. Những đoạn trích bị cắt xén hoặc những hình ảnh được sử dụng sai bối
+                        cảnh có thể khiến người đọc hiểu sai bản chất của sự việc. Ngoài ra, nhiều bài viết còn sử dụng
+                        “nguồn tin ẩn danh để tạo cảm giác rằng thông tin được cung cấp từ một nguồn đáng tin cậy. Chiến
+                        thuật này lợi dụng tâm lý tò mò của người đọc đối với những thông tin được cho là “bí mật” hoặc
+                        “nội bộ , từ đó khiến tin đồn lan truyền nhanh chóng.</p>
+                    <p>Một số chiến dịch truyền thông còn cố tình tạo ra “hiệu ứng đám đông bằng cách sử dụng nhiều tài
+                        khoản để đăng tải các nội dung giống nhau hoặc tương tự nhau. Khi người dùng Internet nhìn thấy
+                        nhiều bài viết cùng một nội dung, họ có thể nhầm tưởng rằng đó là quan điểm phổ biến trong xã
+                        hội. Bên cạnh đó, các nội dung xuyên tạc còn thường khai thác những vấn đề xã hội đang được dư
+                        luận quan tâm, sau đó liên kết chúng với cuộc bầu cử nhằm khơi dậy tâm lý bất mãn và tạo ra
+                        những câu chuyện đơn giản nhưng dễ lan truyền trên mạng xã hội.</p>
+                    <p>Cuộc bầu cử đại biểu Quốc hội khóa XVI và đại biểu Hội đồng nhân dân các cấp nhiệm kỳ 2026 - 2031
+                        là sự kiện chính trị quan trọng, thể hiện quyền làm chủ của Nhân dân trong việc tham gia quản lý
+                        nhà nước và xã hội. Trong bối cảnh môi trường thông tin ngày càng đa chiều và phức tạp, việc
+                        nhận diện và đấu tranh với các thông tin sai lệch về bầu cử đòi hỏi sự vào cuộc của cả hệ thống
+                        chính trị và toàn xã hội. Trong đó, đội ngũ cán bộ, đảng viên cần giữ vai trò nòng cốt trong
+                        việc bảo vệ môi trường thông tin lành mạnh và góp phần củng cố niềm tin của Nhân dân đối với hệ
+                        thống chính trị.</p>
+                    <p>Trước hết, mỗi cán bộ, đảng viên cần nâng cao ý thức trách nhiệm khi tham gia các nền tảng truyền
+                        thông trực tuyến. Trong điều kiện mạng xã hội ngày càng phổ biến, việc tiếp nhận và chia sẻ
+                        thông tin phải dựa trên nguyên tắc thận trọng, khách quan và có kiểm chứng. Việc lan truyền
+                        những thông tin chưa được xác thực hoặc có dấu hiệu xuyên tạc không chỉ làm gia tăng nguy cơ
+                        nhiễu loạn thông tin mà còn có thể ảnh hưởng đến nhận thức xã hội. Do đó, cán bộ, đảng viên cần
+                        chủ động tìm hiểu và nắm vững các quy định pháp luật liên quan đến bầu cử, đồng thời cập nhật
+                        thông tin chính thống để có thể kịp thời cung cấp, giải thích và định hướng thông tin đúng đắn
+                        cho người dân.</p>
+                    <p>Thứ hai, cán bộ, đảng viên cần trang bị những kỹ năng cần thiết để nhận diện thông tin sai lệch
+                        trên không gian mạng. Những biểu hiện như nguồn tin không rõ ràng, nội dung mang tính suy diễn,
+                        thiếu bằng chứng xác thực, tiêu đề giật gân hoặc thông tin bị cắt ghép ngoài bối cảnh thường là
+                        dấu hiệu của các nội dung thiếu tin cậy.</p>
+                    <p>Thứ ba, cần xây dựng văn hóa sử dụng mạng xã hội có trách nhiệm. Không gian mạng không chỉ là nơi
+                        trao đổi thông tin mà còn là môi trường thể hiện thái độ, nhận thức và trách nhiệm công dân. Khi
+                        mỗi cá nhân có ý thức kiểm chứng thông tin trước khi chia sẻ, đồng thời kiên quyết không tiếp
+                        tay cho các nội dung sai lệch, môi trường thông tin sẽ trở nên minh bạch và lành mạnh hơn.</p>
+
+                    <h2 id="sec-5"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        05. Nhiệm vụ trọng tâm của Chính phủ trong Chương trình hành động thực hiện Nghị quyết về phát
+                        triển kinh tế nhà nước và Nghị quyết về Phát triển văn hóa Việt Nam</h2>
+
+                    <p>Nghị quyết số 29/NQ-CP ngày 24/02/2026 của Chính phủ ban hành Chương trình hành động thực hiện
+                        Nghị quyết số 79-NQ/TW ngày 06/01/2026 của Bộ Chính trị về phát triển kinh tế nhà nước trong đó
+                        nêu: Để đạt được mục tiêu đề ra tại Nghị quyết số 79-NQ/TW, bên cạnh nhiệm vụ thường xuyên, các
+                        bộ, cơ quan, địa phương và tổ chức liên quan cần cụ thể hóa và quyết liệt tổ chức triển khai
+                        thực hiện những nhiệm vụ sau: Rà soát các văn bản quy phạm pháp luật trong phạm vi ngành, lĩnh
+                        vực, địa bàn quản lý để xử lý theo thẩm quyền hoặc báo cáo cấp có thẩm quyền để kịp thời xử lý,
+                        tháo gỡ các điểm nghẽn, nút thắt về thể chế đối với kinh tế nhà nước; đồng thời, phân định rõ
+                        chức năng sở hữu, chức năng quản lý kinh tế, chức năng thực hiện các nhiệm vụ chính trị, nhiệm
+                        vụ không vì mục tiêu lợi nhuận với chức năng kinh doanh đối với các tổ chức kinh tế nhà nước.
+                    </p>
+                    <p>Cải cách thủ tục hành chính theo hướng đơn giản hóa thủ tục, giảm thời gian, chi phí tuân thủ,
+                        giảm thiểu can thiệp hành chính trực tiếp; phân cấp, phân quyền; nâng cao tính tự chủ, tự chịu
+                        trách nhiệm; áp dụng nguyên tắc quản lý rủi ro và chuyển mạnh từ tiền kiểm sang hậu kiểm. Nâng
+                        cao chất lượng nguồn nhân lực, nhất là đội ngũ lãnh đạo, quản lý, chuyên gia trong các cơ quan,
+                        tổ chức kinh tế nhà nước; có chính sách hiệu quả nhằm thu hút và trọng dụng nhân tài gắn với
+                        tiêu chuẩn năng lực, đạo đức nghề nghiệp, hiệu quả thực hiện nhiệm vụ.</p>
+                    <p>Lồng ghép Chương trình, Kế hoạch hành động phát triển kinh tế nhà nước trong Chương trình, Kế
+                        hoạch phát triển kinh tế - xã hội của các bộ, cơ quan, địa phương hằng năm và 05 năm; chủ động
+                        bố trí, lồng ghép kinh phí hoặc đề nghị cấp có thẩm quyền bố trí kinh phí để triển khai các hoạt
+                        động liên quan. Xây dựng và thực thi chính sách, pháp luật công bằng, minh bạch theo cơ chế thị
+                        trường trong khai thác và sử dụng nguồn lực quốc gia.</p>
+                    <p>Phối hợp với Bộ Công an khai thác, sử dụng cơ sở dữ liệu quốc gia để kịp thời giám sát, đánh giá
+                        hiệu quả quản lý, sử dụng vốn, tài sản, nguồn lực nhà nước, làm căn cứ cho hoạch định chính
+                        sách, phân bổ và điều tiết nguồn lực. Phối hợp giữa các cơ quan quản lý nhà nước trong kiểm tra,
+                        thanh tra, kiểm toán; tránh chồng chéo, trùng lặp, ảnh hưởng tới hoạt động của các cơ quan, tổ
+                        chức kinh tế nhà nước.</p>
+                    <p>Xây dựng cơ chế đủ mạnh để bảo vệ cán bộ dám nghĩ, dám làm, dám chịu trách nhiệm vì lợi ích chung
+                        trong các trường hợp không có yếu tố tham nhũng, vụ lợi. Thiết lập quy trình xem xét độc lập,
+                        toàn diện và minh bạch để đánh giá bản chất vụ việc là sai sót khách quan hay vi phạm pháp luật
+                        nhằm xử lý đúng người, đúng tội. Tăng cường hoạt động đối thoại; tiếp nhận, lắng nghe phản ánh,
+                        kiến nghị để giải quyết kịp thời khó khăn, vướng mắc hoặc báo cáo cơ quan có thẩm quyền để giải
+                        quyết.</p>
+                    <p>Xây dựng và tổ chức triển khai chương trình tuyên truyền thường xuyên, sâu rộng về nội dung Nghị
+                        quyết số 79-NQ/TW và vai trò của kinh tế nhà nước theo hướng đa dạng hóa các hình thức, phương
+                        thức tuyên truyền; cụ thể hóa nội dung tuyên truyền cho từng nhóm đối tượng. Xây dựng chương
+                        trình truyền thông chuyên đề về phát triển kinh tế nhà nước trên đài truyền hình, phát thanh,
+                        trên các mạng xã hội, báo điện tử. Chuẩn hóa dữ liệu về nguồn lực kinh tế nhà nước, bảo đảm liên
+                        thông, tích hợp, an toàn, an ninh thông tin.</p>
+                    <p>Nghị quyết số 30/NQ-CP ngày 24/02/2026 của Chính phủ ban hành Chương trình hành động của Chính
+                        phủ thực hiện Nghị quyết số 80-NQ/TW ngày 07/01/2026 của Bộ Chính trị về phát triển văn hóa Việt
+                        Nam, trong đó nêu: Bám sát quan điểm chỉ đạo của Bộ Chính trị, để thực hiện thắng lợi các mục
+                        tiêu, nhiệm vụ và giải pháp Nghị quyết số 80-NQ/TW đề ra, bên cạnh các nhiệm vụ thường xuyên,
+                        các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ, Ủy ban nhân dân các tỉnh, thành phố cần cụ
+                        thể hóa và tổ chức triển khai thực hiện các nhiệm vụ sau: Đổi mới mạnh mẽ tư duy, thống nhất cao
+                        về nhận thức và hành động nhằm phát triển văn hóa trong kỷ nguyên mới. Hoàn thiện thể chế tạo
+                        đột phá chiến lược, khơi thông nguồn lực phát triển văn hóa. Chú trọng xây dựng con người Việt
+                        Nam phát triển toàn diện, xây dựng môi trường văn hóa Nhân dân, văn minh. Đổi mới phương thức
+                        quản lý văn hóa theo hướng kiến tạo, phục vụ; đẩy mạnh ứng dụng khoa học, công nghệ, đổi mới
+                        sáng tạo và chuyển đổi số tạo động lực bứt phá cho phát triển văn hóa.</p>
+                    <p>Xây dựng hệ sinh thái văn hóa, thúc đẩy sáng tạo, trong đó doanh nghiệp là động lực, người dân
+                        vừa là chủ thể vừa là trung tâm, nhận diện và ứng xử thích hợp với tài nguyên văn hóa. Thúc đẩy
+                        phát triển các ngành công nghiệp văn hóa, thị trường văn hóa, định vị sản phẩm văn hóa thương
+                        hiệu quốc gia, gắn với phát triển du lịch văn hóa. Huy động và sử dụng hiệu quả các nguồn lực,
+                        phát triển hạ tầng, nâng cao chất lượng nguồn nhân lực văn hóa đáp ứng yêu cầu của kỷ nguyên
+                        mới. Chủ động, tích cực hội nhập quốc tế về văn hóa, phát huy giá trị văn hóa Việt Nam, tiếp thu
+                        tinh hoa văn hóa nhân loại, góp phần xứng đáng gia tăng sức mạnh mềm quốc gia.</p>
+
+                    <h2 id="sec-6"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        06. Kế hoạch triển khai thi hành Luật Tiết kiệm, chống lãng phí</h2>
+
+                    <p>Luật Tiết kiệm, chống lãng phí số 110/2025/QH15 được Quốc hội khóa XV thông qua tại Kỳ họp thứ 10
+                        ngày 10/12/2025, có hiệu lực thi hành từ ngày 01/7/2026. Để triển khai thi hành Luật Tiết kiệm,
+                        chống lãng phí kịp thời, thống nhất và hiệu quả, Kế hoạch triển khai thi hành Luật Tiết kiệm,
+                        chống lãng phí được Thủ tướng ký ban hành bởi Quyết định số 307/QĐ-TTg ngày 15/02/2026. Kế hoạch
+                        nêu một số nội dung triển khai trọng tâm sau:</p>
+                    <p>Xây dựng các Nghị định quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành
+                        và Nghị định quy định về xử phạt vi phạm hành chính trong lĩnh vực tiết kiệm, chống lãng phí: Cơ
+                        quan chủ trì: Bộ Tài chính. Cơ quan phối hợp: Các bộ, cơ quan ngang bộ, Ủy ban nhân dân các
+                        tỉnh, thành phố và các cơ quan, tổ chức có liên quan. Thời gian hoàn thành: Tháng 5/2026. Việc
+                        xây dựng, soạn thảo 02 Nghị định được thực hiện theo trình tự, thủ tục rút gọn. Sản phẩm: Nghị
+                        định quy định chi tiết thi hành Luật Tiết kiệm, chống lãng phí; Nghị định quy định chi tiết việc
+                        áp dụng hình thức kỷ luật, miễn trừ, giảm nhẹ trách nhiệm xử lý kỷ luật đối với hành vi gây lãng
+                        phí và hành vi vi phạm trong tổ chức thực hiện phòng, chống lãng phí và Nghị định quy định về xử
+                        phạt vi phạm hành chính trong lĩnh vực tiết kiệm, chống lãng phí.</p>
+                    <p>Tổ chức rà soát văn bản quy phạm pháp luật: Nội dung thực hiện: Rà soát các văn bản quy phạm pháp
+                        luật có liên quan đến Luật Tiết kiệm, chống lãng phí thuộc thẩm quyền quản lý nhà nước được phân
+                        công; thực hiện theo thẩm quyền hoặc kiến nghị cấp có thẩm quyền kịp thời sửa đổi, bổ sung, thay
+                        thế, bãi bỏ hoặc ban hành mới các văn bản quy phạm pháp luật đảm bảo phù hợp với quy định của
+                        Luật Tiết kiệm, chống lãng phí và các văn bản quy phạm pháp luật quy định chi tiết, hướng dẫn
+                        thi hành có liên quan. Cơ quan thực hiện: Các bộ, cơ quan ngang bộ, Ủy ban nhân dân các tỉnh,
+                        thành phố trực thuộc trung ương căn cứ chức năng, nhiệm vụ rà soát văn bản quy phạm pháp luật có
+                        liên quan đến Luật Tiết kiệm, chống lãng phí thuộc lĩnh vực, địa bàn quản lý nhà nước được phân
+                        công. Thời gian thực hiện: Các bộ, cơ quan ngang bộ, Ủy ban nhân dân các tỉnh, thành phố trực
+                        thuộc trung ương gửi kết quả rà soát về Bộ Tài chính trước ngày 15/4/2026; Bộ Tài chính tổng hợp
+                        kết quả rà soát báo cáo Thủ tướng Chính phủ trước ngày 15/5/2026. Sản phẩm: Danh mục văn bản cần
+                        sửa đổi, bổ sung, thay thế, bãi bỏ. Văn bản quy phạm pháp luật được sửa đổi, bổ sung, thay thế,
+                        bãi bỏ.</p>
+                    <p>Tổ chức thực hiện Ngày toàn dân tiết kiệm, chống lãng phí năm 2026: Nội dung thực hiện: Xây dựng,
+                        ban hành Kế hoạch tổ chức thực hiện Ngày toàn dân tiết kiệm, chống lãng phí năm 2026 theo quy
+                        định tại khoản 3 Điều 38 Luật Tiết kiệm, chống lãng phí. Cơ quan chủ trì: Bộ Tài chính. Cơ quan
+                        phối hợp: Các bộ, cơ quan ngang bộ, Ủy ban nhân dân các tỉnh, thành phố trực thuộc trung ương và
+                        các cơ quan tổ chức khác có liên quan. Thời gian hoàn thành: Trong tháng 4/2026. Sản phẩm: Quyết
+                        định của Thủ tướng Chính phủ về chủ đề và kế hoạch tổ chức thực hiện Ngày toàn dân tiết kiệm,
+                        chống lãng phí năm 2026.</p>
+                    <p>Tổ chức quán triệt, truyền thông, phổ biến Luật và các văn bản quy định chi tiết thi hành: Ở
+                        trung ương, cơ quan chủ trì: Bộ Tài chính. Cơ quan phối hợp: Các bộ, cơ quan ngang bộ, cơ quan
+                        thuộc Chính phủ, Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam, Ủy ban nhân dân các tỉnh, thành
+                        phố và các cơ quan, tổ chức có liên quan. Thời gian thực hiện: Năm 2026 và các năm tiếp theo.
+                        Sản phẩm: Hội nghị, tọa đàm, tài liệu phổ biến, tài liệu truyền thông. Ở địa phương, cơ quan chủ
+                        trì: Ủy ban nhân dân các tỉnh, thành phố. Cơ quan phối hợp: Các ban, ngành, cơ quan, tổ chức có
+                        liên quan. Thời gian thực hiện: Năm 2026 và các năm tiếp theo. Sản phẩm: Hội nghị, tọa đàm, tài
+                        liệu phổ biến, tài liệu truyền thông, các bài đăng trên báo, tạp chí, phóng sự.</p>
+                    <p>Phổ biến, giáo dục về nội dung của Luật thực hiện theo quy định của pháp luật về phổ biến, giáo
+                        dục pháp luật. Pháp điển hệ thống quy phạm pháp luật, rà soát, hệ thống hóa văn bản quy phạm
+                        pháp luật thực hiện theo quy định của Luật Ban hành văn bản quy phạm pháp luật và các quy định
+                        khác của Chính phủ.</p>
+                    <p>Kiểm tra, giám sát, đôn đốc, theo dõi việc thi hành Luật Tiết kiệm, chống lãng phí: Cơ quan thực
+                        hiện: Bộ Tài chính, các cơ quan có thẩm quyền kiểm tra, giám sát, đôn đốc, theo dõi việc thi
+                        hành Luật Tiết kiệm, chống lãng phí theo quy định pháp luật. Thời gian thực hiện: Thường xuyên.
+                        Biên soạn tài liệu, hướng dẫn áp dụng, tập huấn, bồi dưỡng chuyên môn, nghiệp vụ, tiếp nhận và
+                        xử lý kiến nghị (nếu có).</p>
+                    <p>Cơ quan chủ trì: Bộ Tài chính, các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ, Hội đồng nhân
+                        dân, Ủy ban nhân dân tỉnh, thành phố theo chức năng, nhiệm vụ được giao. Thời gian thực hiện:
+                        Thường xuyên. Sản phẩm: Hội nghị tập huấn, tọa đàm, tài liệu hướng dẫn.</p>
+
+                    <h2 id="sec-7"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        07. Đổi mới công tác đào tạo nghề ở nông thôn</h2>
+
+                    <p>Nhằm tiếp tục triển khai đường lối chiến lược của Đảng về công nghiệp hóa, hiện đại hóa nông
+                        nghiệp, nông thôn; nâng cao vai trò của nông dân trong quá trình phát triển nông nghiệp, kinh tế
+                        nông thôn và xây dựng nông thôn mới; để công tác đào tạo nghề cho lao động nông thôn đi vào
+                        chiều sâu, hiệu quả, bền vững và thực chất; đổi mới toàn diện, nâng cao chất lượng và hiệu quả
+                        đào tạo nghề cho lao động nông thôn; ngày 24/02/2026, Thủ tướng cũng đã ký Quyết định số
+                        326/QĐ-TTg ban hành Kế hoạch thực hiện Chỉ thị số 37-CT/TW ngày 10/7/2024 của Ban Bí thư về đổi
+                        mới công tác đào tạo nghề cho lao động nông thôn đáp ứng yêu cầu công nghiệp hóa, hiện đại hóa
+                        nông nghiệp, nông thôn.</p>
+                    <p>Kế hoạch nêu các nhóm nhiệm vụ, giải pháp trọng tâm sau: Nâng cao nhận thức xã hội về vai trò, vị
+                        trí, tầm quan trọng của đào tạo nghề cho lao động nông thôn đối với phát triển kinh tế - xã hội,
+                        xây dựng nông thôn mới, giảm nghèo bền vững, nâng cao dân trí và đời sống của người dân nông
+                        thôn. Nâng cao hiệu quả quản lý nhà nước, trách nhiệm phối hợp của các cơ quan, tổ chức trong
+                        đổi mới, nâng cao chất lượng đào tạo nghề cho lao động nông thôn. Bảo đảm nguồn lực thực hiện
+                        nâng cao chất lượng, hiệu quả công tác đào tạo nghề cho lao động nông thôn. Đổi mới mạnh mẽ,
+                        nâng cao chất lượng, hiệu quả đào tạo nghề cho lao động nông thôn.</p>
+                    <p>Cùng ngày 24/02/2026, Thủ tướng đã ký Quyết định số 328/QĐ-TTg phê duyệt Chương trình “Đổi mới,
+                        nâng cao chất lượng đào tạo nghề nông thôn đến năm 2030 . Chương trình đề ra mục tiêu đổi mới
+                        toàn diện, nâng cao chất lượng và hiệu quả đào tạo nghề cho lao động nông thôn, góp phần chuyển
+                        dịch cơ cấu lao động, cơ cấu kinh tế, giải quyết việc làm, tăng thu nhập cho người lao động, rút
+                        ngắn khoảng cách về tỷ lệ lao động qua đào tạo giữa khu vực nông thôn và thành thị.</p>
+                    <p>Tập trung đào tạo nhân lực có chất lượng phục vụ sản xuất nông nghiệp tiên tiến, hiện đại; đào
+                        tạo để chuyển đổi một bộ phận lao động nông thôn sang làm công nghiệp, dịch vụ, phục vụ sự
+                        nghiệp công nghiệp hóa, hiện đại hóa nông nghiệp, nông thôn và hội nhập quốc tế. Đào tạo nguồn
+                        nhân lực nông thôn gắn xây dựng nông thôn mới hiện đại, giàu đẹp, bản sắc, bền vững, gắn với đô
+                        thị hóa và thích ứng biến đổi khí hậu; đào tạo thực chất, đi theo chiều sâu, hiệu quả, bền vững,
+                        lấy cư dân nông thôn làm chủ thể, đem lại chuyển biến tích cực, rõ nét hơn về chuyển đổi nghề
+                        nghiệp, tạo việc làm, thu nhập cho người dân.</p>
+                    <p>Đến năm 2030, bình quân hằng năm đào tạo, đào tạo lại, đào tạo bồi dưỡng nâng cao trình độ kỹ
+                        năng nghề cho khoảng 1,5 triệu lao động nông thôn, trong đó, đào tạo nghề phi nông nghiệp chiếm
+                        khoảng 70%, đào tạo nghề nông nghiệp, phát triển ngành nghề nông thôn chiếm khoảng 30%; số lao
+                        động nông thôn là nữ được đào tạo nghề chiếm trên 45%, người khuyết tật có nhu cầu được hỗ trợ
+                        học nghề, tạo việc làm chiếm khoảng 4%, người dân tộc thiểu số trong độ tuổi được đào tạo nghề
+                        phù hợp với nhu cầu, điều kiện của người dân tộc thiểu số và đặc thù của vùng dân tộc thiểu số
+                        chiếm khoảng 70%. Tỷ lệ lao động có việc làm sau đào tạo đạt trên 85%.</p>
+                    <p>Các nhóm nhiệm vụ, giải pháp gồm: Nâng cao nhận thức của các cấp, các ngành, xã hội và người dân
+                        về vai trò của đào tạo nghề đối với việc nâng cao chất lượng nguồn nhân lực nông thôn, tạo việc
+                        làm, tăng thu nhập, giảm nghèo bền vững và xây dựng nông thôn mới. Rà soát, hoàn thiện hệ thống
+                        chính sách hỗ trợ về đào tạo nghề cho lao động nông thôn. Điều tra, khảo sát và dự báo nhu cầu
+                        của thị trường lao động, nhu cầu học nghề, việc làm cho lao động nông thôn. Nâng cao chất lượng
+                        các điều kiện đảm bảo cho hoạt động đào tạo nghề cho lao động nông thôn. Đào tạo, đào tạo lại,
+                        đào tạo bồi dưỡng nâng cao trình độ kỹ năng nghề cho lao động nông thôn. Tăng cường gắn kết giữa
+                        cơ sở giáo dục nghề nghiệp và doanh nghiệp, hợp tác xã trong tổ chức đào tạo và tạo việc làm cho
+                        lao động nông thôn. Hợp tác quốc tế trong đào tạo nghề cho lao động nông thôn. Kiểm tra, giám
+                        sát đánh giá việc thực hiện Chương trình.</p>
+
+                    <h2 id="sec-8"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        08. Chương trình Hỗ trợ học sinh, sinh viên khởi nghiệp giai đoạn 2026 - 2035</h2>
+
+                    <p>Chương trình Hỗ trợ học sinh, sinh viên khởi nghiệp giai đoạn 2026 - 2035 được phê duyệt bởi
+                        Quyết định số 336/QĐ-TTg, ngày 25/2/2026 của Thủ tướng Chính phủ, với mục tiêu hình thành văn
+                        hóa khởi nghiệp trong các cơ sở giáo dục; lan tỏa tinh thần và khát vọng khởi nghiệp, phát triển
+                        sản phẩm, giải pháp khởi nghiệp có giá trị, mang bản sắc Việt Nam. Tạo điều kiện để người học
+                        phát huy vai trò trung tâm sáng tạo, từng bước nâng cao năng lực làm chủ tri thức và công nghệ;
+                        khuyến khích tham gia đổi mới sáng tạo, chuyển đổi số, chuyển đổi xanh góp phần phát triển nguồn
+                        nhân lực cho kinh tế tri thức và phát triển bền vững. Phát triển hệ sinh thái khởi nghiệp trong
+                        các cơ sở giáo dục đồng bộ, thực chất, với sự hỗ trợ hiệu quả từ cơ chế, chính sách của Nhà
+                        nước, dịch vụ hỗ trợ, hạ tầng, nền tảng số và vốn mồi, giúp người học vốn hóa tri thức, hình
+                        thành doanh nghiệp khởi nguồn, khởi nghiệp, đóng góp cho phát triển kinh tế - xã hội bền vững.
+                    </p>
+                    <p>Giai đoạn 2026 - 2030, đối với cơ sở giáo dục phổ thông, 50% học sinh trung học phổ thông; 25%
+                        học sinh trung học cơ sở; 15% học sinh tiểu học được định hướng khởi nghiệp. 35% học sinh trung
+                        học phổ thông; 15% học sinh trung học cơ sở; 10% học sinh tiểu học được trang bị kiến thức, kỹ
+                        năng, tư duy khởi nghiệp. Bình quân hằng năm, tối thiểu 5% học sinh trung học phổ thông và 2%
+                        học sinh trung học cơ sở tham gia ít nhất một dự án hoặc hoạt động khởi nghiệp do cơ sở giáo dục
+                        hoặc cơ quan, đơn vị liên quan tổ chức.</p>
+                    <p>Đối với các cơ sở đào tạo, 100% cơ sở đào tạo ban hành và công khai quy chế hỗ trợ sinh viên khởi
+                        nghiệp trên cổng thông tin; 100% cơ sở đào tạo cung cấp dịch vụ hỗ trợ sinh viên khởi nghiệp với
+                        các dịch vụ tối thiểu theo quy định của Bộ Giáo dục và Đào tạo. 85% sinh viên hoàn thành học
+                        phần khởi nghiệp hoặc tham gia tối thiểu 01 khóa học kỹ năng khởi nghiệp. Số sinh viên khởi
+                        nghiệp mới theo quy mô tối thiểu 50/10.000 sinh viên chính quy mỗi năm. Riêng đối với cơ sở đào
+                        tạo trọng điểm đạt tối thiểu 100/10.000 sinh viên.</p>
+                    <p>Hằng năm, tối thiểu 40% cơ sở đào tạo duy trì và triển khai chương trình ươm tạo khởi nghiệp cho
+                        sinh viên. Ít nhất 20% cơ sở đào tạo có 20 dự án khởi nghiệp sinh viên được ươm tạo mỗi năm, 50%
+                        số dự án hoàn tất ươm tạo và đạt ngưỡng ra thị trường. Riêng đối với cơ sở đào tạo trọng điểm
+                        đạt tối thiểu 50 dự án khởi nghiệp sinh viên được ươm tạo mỗi năm, 50% số dự án hoàn tất ươm tạo
+                        và đạt ngưỡng ra thị trường. Về đầu tư/kết nối dự án khởi nghiệp, mỗi năm ít nhất 40 dự án khởi
+                        nghiệp của nhà giáo, người học được đầu tư hoặc kết nối nguồn vốn, trong đó ít nhất 30% dự án có
+                        nữ tham gia và ít nhất 10% dự án của học sinh, sinh viên dân tộc thiểu số.</p>
+                    <p>Giai đoạn 2031 - 2035, đối với cơ sở giáo dục phổ thông, 65% học sinh trung học phổ thông; 35%
+                        học sinh trung học cơ sở; 20% học sinh tiểu học được định hướng khởi nghiệp. 50% học sinh trung
+                        học phổ thông; 25% học sinh trung học cơ sở; 15% học sinh tiểu học được trang bị kiến thức, kỹ
+                        năng, tư duy khởi nghiệp. Bình quân hàng năm, tối thiểu 8% học sinh trung học phổ thông và 3%
+                        học sinh trung học cơ sở tham gia ít nhất một dự án hoặc hoạt động khởi nghiệp do cơ sở giáo dục
+                        hoặc cơ quan, đơn vị liên quan tổ chức.</p>
+                    <p>Đối với các cơ sở đào tạo, duy trì mức 100% cơ sở đào tạo cung cấp các dịch vụ hỗ trợ sinh viên
+                        khởi nghiệp, đồng thời nâng cao chất lượng dịch vụ theo quy định của Bộ Giáo dục và Đào tạo. 95%
+                        sinh viên hoàn thành học phần khởi nghiệp hoặc tham gia tối thiểu 01 khóa học kỹ năng khởi
+                        nghiệp. Số sinh viên khởi nghiệp mới theo quy mô tối thiểu 100/10.000 sinh viên chính quy mỗi
+                        năm. Riêng đối với cơ sở đào tạo trọng điểm tối thiểu 150/10.000 sinh viên. Hằng năm, tối thiểu
+                        60% cơ sở đào tạo duy trì và triển khai chương trình ươm tạo khởi nghiệp cho sinh viên. Ít nhất
+                        30% cơ sở đào tạo có 20 dự án khởi nghiệp sinh viên được ươm tạo mỗi năm, 50% số dự án hoàn tất
+                        ươm tạo và đạt ngưỡng ra thị trường. Riêng đối với cơ sở đào tạo trọng điểm tối thiểu 100 dự án
+                        khởi nghiệp sinh viên được ươm tạo mỗi năm, 50% số dự án hoàn tất ươm tạo và đạt ngưỡng ra thị
+                        trường. Về đầu tư/kết nối dự án khởi nghiệp, mỗi năm ít nhất 70 dự án khởi nghiệp của nhà giáo,
+                        người học được đầu tư hoặc kết nối nguồn vốn, trong đó ít nhất 35% dự án có nữ tham gia và ít
+                        nhất 15% dự án của học sinh, sinh viên dân tộc thiểu số.</p>
+                    <p>Các nhóm nhiệm vụ, giải pháp gồm: Hoàn thiện cơ chế, chính sách hỗ trợ khởi nghiệp. Tăng cường
+                        hoạt động kết nối các chủ thể trong hệ sinh thái khởi nghiệp, nâng cao hiệu quả công tác truyền
+                        thông, hợp tác quốc tế. Đổi mới nội dung chương trình, đẩy mạnh công tác đào tạo thúc đẩy văn
+                        hóa khởi nghiệp. Đầu tư hạ tầng, cơ sở vật chất hỗ trợ hệ sinh thái khởi nghiệp trong các cơ sở
+                        giáo dục. Đa dạng hóa nguồn vốn cho chương trình, dự án khởi nghiệp.</p>
+
+                    <p class="font-bold text-lg uppercase mt-12">HOẠT ĐỘNG ĐỐI NGOẠI VÀ TÌNH HÌNH THẾ GIỚI NỔI BẬT THỜI
+                        GIAN GẦN ĐÂY</p>
+
+                    <h2 id="sec-9"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        09. Một số kết quả chuyến tham dự Cuộc họp khai mạc Hội đồng hòa bình về Gaza của Tổng Bí thư Tô
+                        Lâm</h2>
+
+                    <p>Nhận lời mời của Tổng thống Hoa Kỳ Donald Trump, Chủ tịch Hội đồng hòa bình về Gaza, Tổng Bí thư
+                        Tô Lâm đã tham dự Cuộc họp khai mạc Hội đồng hòa bình về Gaza tại Washington D.C (Hoa Kỳ) từ
+                        ngày 18 - 20/02/2026, với tư cách thành viên sáng lập. Tham dự cuộc họp, có nguyên thủ và lãnh
+                        đạo của hơn 50 quốc gia, là các nước thành viên sáng lập và quan sát viên của Hội đồng Hòa bình.
+                    </p>
+                    <p>Đây là một dấu ấn đối ngoại, khẳng định vị thế, khí thế mới, hành động thiết thực để đóng góp
+                        hiệu quả cho hòa bình thế giới. Việc Việt Nam tham gia Hội đồng Hòa bình là cụ thể hóa đường lối
+                        đối ngoại theo tinh thần Đại hội đại biểu toàn quốc lần thứ XIV của Đảng Cộng sản Việt Nam, độc
+                        lập, tự chủ, tự cường, hòa bình, hữu nghị, hợp tác và phát triển, tham gia chủ động, có trách
+                        nhiệm vào việc giải quyết các vấn đề chung của khu vực và quốc tế; khẳng định quan điểm và tư
+                        tưởng của dân tộc Việt Nam, một dân tộc đã trải qua nhiều hy sinh, mất mát của chiến tranh, một
+                        dân tộc luôn phấn đấu cho hòa bình.</p>
+                    <p>Việt Nam sẵn sàng phối hợp chặt chẽ với các thành viên Hội đồng Hòa bình về Gaza tham gia trong
+                        khả năng của mình vào các nỗ lực chung nhằm hỗ trợ nhân đạo khẩn cấp, tái thiết cơ sở hạ tầng
+                        thiết yếu và xây dựng lòng tin giữa các bên.</p>
+                    <p>Trong chuyến công tác, Tổng Bí thư Tô Lâm đã có cuộc gặp Tổng thống Hoa Kỳ Donald Trump; trao đổi
+                        với lãnh đạo cấp cao các nước, trong đó có lãnh đạo của các quốc gia tại khu vực Trung Đông;
+                        tiếp Trưởng đại diện Thương mại Hoa Kỳ - Đại sứ Jamieson Greer, điện đàm với các nghị sĩ Hoa Kỳ,
+                        gặp gỡ cộng đồng người Việt Nam tại Hoa Kỳ. Tại các cuộc gặp, Tổng Bí thư và các đồng chí thành
+                        viên trong đoàn đã thông tin về tình hình Việt Nam, kết quả của quá trình đổi mới trong 40 năm
+                        qua, trong đó có 5 năm thực hiện Nghị quyết Đại hội Đảng lần thứ XIII với các mục tiêu phát
+                        triển đến năm 2030 và năm 2045. Tổng Bí thư cũng chia sẻ các phương hướng phát triển của Việt
+                        Nam và đường lối đối ngoại của Việt Nam, tiếp tục thúc đẩy quan hệ với các đối tác, trong đó có
+                        quan hệ với nước chủ nhà Hoa Kỳ, phù hợp với khuôn khổ quan hệ Đối tác Chiến lược toàn diện.</p>
+                    <p>Các đối tác đều nhất trí tăng cường quan hệ song phương thực chất, hiệu quả với Việt Nam. Dư luận
+                        quốc tế đánh giá việc Việt Nam tham gia Hội đồng Hòa bình thể hiện rõ đường lối đối ngoại nhất
+                        quán của Việt Nam: mong muốn đóng góp cho hòa bình và phát triển của thế giới. Điều này tiếp tục
+                        khẳng định vị thế, uy tín và vai trò ngày càng nâng cao của Việt Nam trên trường quốc tế.</p>
+
+                    <h2 id="sec-10"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        10. Một số nét chính về kinh tế thế giới những tháng đầu năm 2026</h2>
+
+                    <p>Trong những tháng đầu năm 2026, môi trường địa chính trị quốc tế tiếp tục diễn biến phức tạp và
+                        khó dự báo, với sự gia tăng các điểm nóng an ninh và cạnh tranh địa kinh tế giữa các cường quốc.
+                        Đáng chú ý, căng thẳng quân sự tại Trung Đông đầu tháng 3/2026 làm gia tăng nguy cơ xung đột lan
+                        rộng, đặc biệt liên quan đến eo biển Hormuz - tuyến vận tải năng lượng chiến lược trung chuyển
+                        khoảng 20% nguồn cung dầu toàn cầu. Các tổ chức quốc tế cảnh báo nếu xung đột kéo dài và ảnh
+                        hưởng đến vận tải qua khu vực này, kinh tế thế giới có thể chịu tác động đáng kể thông qua kênh
+                        giá năng lượng, làm gia tăng áp lực lạm phát và bất ổn kinh tế vĩ mô.</p>
+                    <p>Cạnh tranh địa kinh tế giữa các nền kinh tế lớn tiếp tục gia tăng khi nhiều quốc gia đẩy mạnh các
+                        biện pháp bảo đảm an ninh kinh tế và kiểm soát nguồn lực chiến lược. Trung Quốc áp dụng các biện
+                        pháp kiểm soát xuất khẩu đối với một số khoáng sản và vật liệu chiến lược, làm dấy lên lo ngại
+                        về nguy cơ phân mảnh chuỗi cung ứng nguyên liệu toàn cầu, đặc biệt trong các ngành công nghệ cao
+                        và công nghiệp quốc phòng. Sau khi Tòa án Tối cao Mỹ bác bỏ phần lớn chính sách thuế quan đối
+                        ứng trước đó, Mỹ triển khai mức thuế quan toàn cầu khoảng 10% đối với hàng hóa nhập khẩu, đồng
+                        thời vẫn bỏ ngỏ khả năng tăng thuế đối với một số đối tác thương mại.</p>
+                    <p>Căng thẳng địa chính trị gia tăng đã tác động đến tâm lý thị trường và các biến số kinh tế vĩ mô
+                        toàn cầu. Xu hướng phòng ngừa rủi ro của nhà đầu tư ngày càng rõ rệt, thể hiện qua sự dịch
+                        chuyển dòng vốn sang các tài sản an toàn. Trên thị trường tài chính, dòng vốn có xu hướng chảy
+                        vào kim loại quý như vàng, khiến giá vàng tăng mạnh trong những tháng đầu năm 2026. Thị trường
+                        chứng khoán toàn cầu chịu áp lực điều chỉnh, trong bối cảnh lo ngại xung đột tại Trung Đông và
+                        khả năng giá năng lượng tăng cao. Trên thị trường năng lượng, giá dầu thế giới tăng đáng kể do
+                        lo ngại gián đoạn nguồn cung từ Trung Đông. Nhiều tổ chức quốc tế cảnh báo nếu hoạt động vận tải
+                        qua eo biển Hormuz bị gián đoạn kéo dài, giá dầu có thể tăng mạnh và gây ra cú sốc năng lượng
+                        đối với kinh tế toàn cầu, qua đó làm gia tăng rủi ro lạm phát và áp lực đối với chính sách tiền
+                        tệ của các nền kinh tế lớn.</p>
+                    <p>Trong bối cảnh lạm phát toàn cầu vẫn tiềm ẩn rủi ro, các ngân hàng trung ương lớn tiếp tục duy
+                        trì chính sách tiền tệ thận trọng nhằm cân bằng giữa kiểm soát lạm phát và hỗ trợ tăng trưởng.
+                        Tại Mỹ, số liệu của Cục Thống kê lao động cho thấy chỉ số giá sản xuất (PPI) tháng 1/2026 tăng
+                        khoảng 0,5% so với tháng trước, cao hơn dự báo thị trường, cho thấy áp lực lạm phát vẫn chưa
+                        được kiểm soát hoàn toàn, củng cố lập trường thận trọng của Cục Dự trữ Liên bang Mỹ (Fed) đối
+                        với việc cắt giảm lãi suất. Trong khi đó, Ngân hàng Nhân dân Trung Quốc (PBOC) duy trì lãi suất
+                        cho vay cơ bản (LPR) 3,0% đối với kỳ hạn 1 năm và 3,5% đối với kỳ hạn 5 năm nhằm hỗ trợ tăng
+                        trưởng trong bối cảnh nhu cầu nội địa còn yếu. Ngân hàng Trung ương Nhật Bản (BOJ) đang từng
+                        bước điều chỉnh chính sách tiền tệ theo hướng bình thường hóa sau giai đoạn nới lỏng kéo dài, dù
+                        điều kiện tài chính nhìn chung vẫn mang tính hỗ trợ.</p>
+                    <p>Theo cập nhật của Quỹ Tiền tệ Quốc tế (IMF) trong Báo cáo World Economic Outlook Update đầu năm
+                        2026, kinh tế thế giới được dự báo duy trì tăng trưởng tương đối ổn định trong trung hạn, dù vẫn
+                        tiềm ẩn nhiều rủi ro địa chính trị, tài chính và thương mại. IMF dự báo tăng trưởng kinh tế toàn
+                        cầu đạt khoảng 3,3% năm 2026 và 3,2% năm 2027, tương đương mức trung bình trước đại dịch. Tuy
+                        nhiên, tăng trưởng tiếp tục phân hóa giữa các nhóm quốc gia. Các nền kinh tế phát triển được dự
+                        báo tăng trưởng khoảng 1,7 - 1,8%, do tác động kéo dài của lãi suất cao, dân số già hóa và năng
+                        suất chậm cải thiện; trong đó Mỹ khoảng 2 - 2,4%, khu vực đồng Euro khoảng 1,5 1,6%. Các nền
+                        kinh tế mới nổi và đang phát triển (EMDES) được dự báo tăng trưởng khoảng 4,5% năm 2026 và
+                        khoảng 4% năm 2027, tiếp tục là động lực chính của tăng trưởng toàn cầu. Ấn Độ duy trì tốc độ
+                        tăng trưởng cao khoảng 6,4%/năm, nhờ cải cách kinh tế, mở rộng đầu tư hạ tầng và dịch chuyển
+                        chuỗi cung ứng. Trung Quốc dự kiến tăng trưởng 4 - 4,5%, thấp hơn giai đoạn trước do các thách
+                        thức cơ cấu như khủng hoảng bất động sản, già hóa dân số và chuyển đổi mô hình tăng trưởng.
+                        Trong khi đó, khu vực ASEAN được kỳ vọng tăng trưởng khoảng 4,2 - 4,4%, nhờ tiêu dùng nội địa,
+                        dòng vốn đầu tư nước ngoài và hội nhập kinh tế sâu rộng.</p>
+                    <p>Theo các chuyên gia, trong bối cảnh kinh tế thế giới năm 2026 còn nhiều biến động, các xu hướng
+                        trên sẽ tạo ra cả cơ hội và thách thức đối với Việt Nam. Căng thẳng địa chính trị tại Trung Đông
+                        và nguy cơ gián đoạn nguồn cung năng lượng có thể làm giá dầu thế giới tăng, tác động đến chi
+                        phí sản xuất, vận tải và áp lực lạm phát trong nước. Đồng thời, những thay đổi trong chính sách
+                        thương mại của Mỹ, đặc biệt các biện pháp thuế quan mới, có thể ảnh hưởng đến hoạt động xuất
+                        khẩu của Việt Nam. Mặc dù xu hướng bảo hộ thương mại làm gia tăng rủi ro đối với thương mại toàn
+                        cầu, quá trình tái cấu trúc chuỗi cung ứng quốc tế cũng mở ra cơ hội để Việt Nam thu hút thêm
+                        đầu tư và mở rộng xuất khẩu, đặc biệt trong các ngành công nghiệp chế biến và công nghệ.</p>
+
+                    <h2 id="sec-11"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        11. Xung đột tại Trung Đông và tác động đối với an ninh toàn cầu</h2>
+
+                    <p>Trung Đông từ lâu được xem là một trong những khu vực địa chính trị phức tạp và nhạy cảm nhất thế
+                        giới. Nằm tại điểm giao thoa giữa ba châu lục Á - Âu - Phi và sở hữu khoảng trên 50% trữ lượng
+                        dầu mỏ toàn cầu, khu vực này luôn là tâm điểm cạnh tranh lợi ích giữa các cường quốc. Bên cạnh
+                        yếu tố năng lượng, Trung Đông còn tồn tại nhiều mâu thuẫn lịch sử liên quan đến lãnh thổ, sắc
+                        tộc, tôn giáo và quyền tự quyết của các dân tộc, đặc biệt là xung đột Israel - Palestine và sự
+                        đối đầu giữa Israel với Iran. Sự khác biệt giữa các tôn giáo lớn như Do Thái giáo, Hồi giáo,
+                        Kitô giáo và sự phân hóa trong nội bộ Hồi giáo giữa hai dòng Sunni - Shia càng làm cấu trúc an
+                        ninh khu vực trở nên phức tạp.</p>
+                    <p>Trong nhiều thập niên, Trung Đông giữ vai trò quan trọng trong chiến lược toàn cầu của Mỹ. Mỹ duy
+                        trì ảnh hưởng thông qua các đồng minh chiến lược như Israel và nhiều quốc gia Arab, cùng mạng
+                        lưới căn cứ quân sự rộng khắp và hệ thống thanh toán dầu mỏ bằng USD (Petrodollar), qua đó củng
+                        cố vai trò chi phối đối với trật tự kinh tế - năng lượng khu vực. Tuy nhiên, sự can dự của các
+                        cường quốc cùng những mâu thuẫn nội tại khiến Trung Đông luôn tiềm ẩn nguy cơ xung đột.</p>
+                    <p>Quan hệ giữa Iran với Mỹ và Israel từng gắn bó dưới thời Quốc vương Mohammad Reza Pahlavi, nhưng
+                        sau Cách mạng Hồi giáo năm 1979, Iran chuyển sang đối đầu mạnh mẽ với hai nước này. Sự kiện bắt
+                        giữ con tin tại Đại sứ quán Mỹ ở Tehran (Iran) năm 1979 đánh dấu bước ngoặt trong quan hệ. Từ
+                        thập niên 1980, Iran xây dựng mạng lưới lực lượng ủy nhiệm tại khu vực như Hezbollah, Hamas và
+                        Houthi, hình thành “trục kháng chiến nhằm đối phó với Mỹ và Israel.</p>
+                    <p>Bước sang thế kỷ XXI, chương trình hạt nhân và năng lực tên lửa của Iran trở thành tâm điểm căng
+                        thẳng. Mỹ và Israel coi đây là mối đe dọa chiến lược, trong khi Iran khẳng định mục đích hòa
+                        bình. Nhiều chiến dịch bí mật, ám sát nhà khoa học hạt nhân và các cuộc tấn công vào cơ sở quân
+                        sự - hạt nhân của Iran trong giai đoạn 2010 - 2025 đã làm gia tăng đáng kể mức độ đối đầu trong
+                        khu vực.</p>
+                    <p>Căng thẳng leo thang mạnh vào cuối tháng 02/2026, khi Mỹ và Israel tiến hành cuộc tấn công quân
+                        sự quy mô lớn nhằm vào Iran, sử dụng hàng trăm máy bay chiến đấu và hàng nghìn tên lửa tấn công
+                        các mục tiêu chiến lược như cơ quan đầu não, hệ thống phòng không, căn cứ quân sự và cơ sở hạt
+                        nhân. Đòn tấn công mang tính “phủ đầu” này gây tổn thất lớn đối với bộ máy lãnh đạo và tiềm lực
+                        quân sự của Iran, đánh dấu bước leo thang nghiêm trọng chưa từng có trong xung đột giữa các bên.
+                        Đáp lại, Iran nhanh chóng triển khai chiến lược phản công với cường độ cao, sử dụng hàng loạt
+                        tên lửa và máy bay không người lái (UAV) tấn công vào lãnh thổ Israel cũng như nhiều căn cứ quân
+                        sự của Mỹ tại Trung Đông. Đồng thời, các lực lượng thuộc “trục kháng chiến” cũng tham gia phối
+                        hợp tác chiến từ nhiều hướng, khiến chiến trường mở rộng trên phạm vi toàn khu vực.</p>
+                    <p>Cuộc xung đột tại Trung Đông tạo ra những dư chấn sâu rộng trên phạm vi toàn cầu, tác động mạnh
+                        đến cấu trúc an ninh khu vực. Nhiều quốc gia Trung Đông rơi vào thế lưỡng nan giữa việc duy trì
+                        quan hệ với Mỹ và tránh bị cuốn vào vòng xoáy chiến tranh. Các cường quốc ngoài khu vực như Nga,
+                        Trung Quốc và Ấn Độ bày tỏ quan ngại sâu sắc, kêu gọi các bên kiềm chế và thúc đẩy giải pháp
+                        ngoại giao. Đồng thời, nguy cơ gián đoạn nguồn cung dầu mỏ toàn cầu, đặc biệt trong trường hợp
+                        Iran phong tỏa eo biển Hormuz - tuyến vận chuyển năng lượng quan trọng bậc nhất thế giới - làm
+                        gia tăng lo ngại về những tác động nghiêm trọng đối với kinh tế và thị trường năng lượng toàn
+                        cầu.</p>
+
+                    <blockquote>
+                        Trước tình hình leo thang căng thẳng tại Trung Đông hiện nay, Người Phát ngôn Bộ Ngoại giao Việt
+                        Nam ngày 28/02/2026 nhấn mạnh: Việt Nam quan ngại sâu sắc về tình hình xung đột leo thang phức
+                        tạp tại khu vực Trung Đông, đe dọa nghiêm trọng đến tính mạng và an toàn của người dân, cũng như
+                        hòa bình và ổn định của khu vực và thế giới.
+                    </blockquote>
+
+                    <p>Việt Nam kêu gọi các bên liên quan kiềm chế tối đa, chấm dứt ngay các hành động làm gia tăng căng
+                        thẳng, bảo vệ dân thường và các cơ sở hạ tầng thiết yếu, giải quyết bất đồng bằng các biện pháp
+                        hòa bình, tuân thủ nghiêm túc luật pháp quốc tế, Hiến chương và các nghị quyết liên quan của
+                        Liên hợp quốc, tôn trọng chủ quyền và toàn vẹn lãnh thổ của các quốc gia, đồng thời tạo điều
+                        kiện thuận lợi cho các nỗ lực đàm phán hòa bình vì an ninh, ổn định của khu vực và thế giới.</p>
+
+                    <blockquote>
+                        Tiếp đó ngày 05/3/2026, Người Phát ngôn Bộ Ngoại giao Việt Nam khẳng định: Lập trường của Việt
+                        Nam đã được nêu rõ ngày 28/02/2026. Việt Nam phản đối các hành vi sử dụng vũ lực tấn công vào
+                        các quốc gia có chủ quyền, đặc biệt vào các cơ sở hạ tầng dân sự khiến nhiều người dân bị thiệt
+                        mạng.
+                    </blockquote>
+
+                    <p>Các hành động này đã gây thiệt hại nghiêm trọng và tiếp tục đe dọa tính mạng, an toàn và lợi ích
+                        của người dân, trong đó có công dân Việt Nam tại khu vực, gây bất ổn cho các hoạt động kinh tế,
+                        hòa bình, ổn định của khu vực và thế giới. Việt Nam kêu gọi các bên liên quan hành động có trách
+                        nhiệm, tuân thủ nghiêm túc luật pháp quốc tế, Hiến chương và các nghị quyết liên quan của Liên
+                        hợp quốc, tôn trọng chủ quyền và toàn vẹn lãnh thổ của các quốc gia, nối lại đàm phán, tạo điều
+                        kiện thuận lợi cho đối thoại hướng tới việc giải quyết các khác biệt bằng biện pháp hòa bình, vì
+                        lợi ích của người dân, vì hòa bình, ổn định và phát triển ở khu vực và trên thế giới.</p>
+                    <p>Bộ Ngoại giao cũng khuyến cáo công dân Việt Nam tại Iran, Israel và các quốc gia lân cận chủ động
+                        theo dõi tình hình, thực hiện các biện pháp bảo đảm an toàn. Trong trường hợp khẩn cấp hoặc gặp
+                        khó khăn, công dân Việt Nam cần liên hệ ngay với các đường dây nóng bảo hộ công dân 24/7 của các
+                        cơ quan đại diện Việt Nam tại Iran, Israel và các khu vực lân cận, hoặc Tổng đài Bảo hộ công dân
+                        của Bộ Ngoại giao Việt Nam để được hỗ trợ kịp thời.</p>
+
+                    <img src="https://cdnphoto.dantri.com.vn/mhpoMRs3YsQYB33RX_DsjexAcnE=/thumb_w/1020/2026/03/08/my-israel-tan-cong-don-dap-iran-dap-tra-du-doi-1772948628511.jpg"
+                        class="w-full h-auto rounded-xl my-8 shadow-sm">
+
+                    <h2 id="sec-12"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        12. Cuộc cạnh tranh trí tuệ nhân tạo giữa Mỹ và Trung Quốc hiện nay</h2>
+
+                    <p>Trong bối cảnh cuộc Cách mạng công nghiệp lần thứ tư phát triển mạnh mẽ, trí tuệ nhân tạo (AI)
+                        đang trở thành một trong những lĩnh vực công nghệ có ảnh hưởng sâu rộng đến sự phát triển kinh
+                        tế, khoa học - công nghệ và năng lực cạnh tranh của các quốc gia. Nhiều nước lớn đã ban hành
+                        chiến lược quốc gia về AI, tăng cường đầu tư cho nghiên cứu, xây dựng hạ tầng công nghệ và thúc
+                        đẩy ứng dụng trong nhiều lĩnh vực của đời sống kinh tế - xã hội. Trong xu thế đó, Mỹ và Trung
+                        Quốc được xem là hai trung tâm công nghệ lớn, có vai trò quan trọng trong việc định hình cục
+                        diện phát triển AI trên thế giới.</p>
+                    <p>Tháng 7/2025, Chính quyền Tổng thống Mỹ Donald Trump công bố kế hoạch hành động về trí tuệ nhân
+                        tạo nhằm củng cố vị thế công nghệ của Mỹ trong lĩnh vực này. Văn kiện nhấn mạnh rằng quốc gia
+                        nắm ưu thế trong AI có thể tạo ra lợi thế đáng kể về kinh tế, khoa học - công nghệ và năng lực
+                        cạnh tranh. Tuy nhiên, thực tế cho thấy cạnh tranh trong lĩnh vực trí tuệ nhân tạo không chỉ
+                        diễn ra trong một lĩnh vực đơn lẻ mà trải rộng trên nhiều khâu của hệ sinh thái công nghệ, từ
+                        phát triển mô hình AI tiên tiến, xây dựng hạ tầng tính toán như trung tâm dữ liệu và chip bán
+                        dẫn, đến định hình tiêu chuẩn công nghệ và triển khai ứng dụng AI trong các hệ thống vật lý như
+                        robot, nhà máy và phương tiện giao thông. Điều này cho thấy mỗi quốc gia có thể đạt lợi thế ở
+                        những khâu khác nhau của chuỗi giá trị công nghệ.</p>
+                    <p>Đáng chú ý là việc Mỹ điều chỉnh chính sách xuất khẩu chip AI. Tháng 12/2025, Tổng thống Donald
+                        Trump tuyên bố cho phép bán chip H200 của Nvidia một trong những dòng chip AI có hiệu năng cao
+                        cho một số khách hàng được chấp thuận tại Trung Quốc. Quyết định này được cho là nhằm tạo thêm
+                        nguồn thu cho các doanh nghiệp công nghệ Mỹ và duy trì ảnh hưởng của các tiêu chuẩn công nghệ do
+                        Mỹ phát triển. Tuy nhiên, động thái này cũng đặt ra nhiều đánh giá khác nhau về tác động đối với
+                        cán cân công nghệ toàn cầu, khi các doanh nghiệp Mỹ tiếp tục giữ vị thế mạnh trong các dịch vụ
+                        AI tiên tiến, còn các doanh nghiệp Trung Quốc có thể mở rộng ứng dụng AI với chi phí thấp hơn
+                        trong sản xuất và hạ tầng.</p>
+                    <p>Trong lĩnh vực nghiên cứu và phát triển mô hình AI, các doanh nghiệp công nghệ Mỹ như OpenAI,
+                        Google và Anthropic đã xây dựng nhiều hệ thống có khả năng xử lý ngôn ngữ tự nhiên, phân tích dữ
+                        liệu và hỗ trợ ra quyết định với độ chính xác cao. Những hệ thống này trở thành nền tảng cho
+                        nhiều dịch vụ số như trợ lý ảo, quản trị nền tảng điện toán đám mây, phần mềm năng suất và dịch
+                        vụ khách hàng. Tuy vậy, khoảng cách công nghệ đang dần thu hẹp khi các doanh nghiệp công nghệ
+                        Trung Quốc như DeepSeek, Alibaba hay Moonshot AI tăng cường đầu tư nghiên cứu. Trong nhiều ứng
+                        dụng phổ biến như soạn thảo văn bản, tóm tắt thông tin, dịch thuật hoặc hỗ trợ lập trình, sự
+                        khác biệt giữa các hệ thống AI hàng đầu ngày càng giảm.</p>
+                    <p>Bên cạnh nghiên cứu mô hình, năng lực tính toán giữ vai trò đặc biệt quan trọng đối với sự phát
+                        triển của AI. Việc huấn luyện và vận hành các mô hình AI quy mô lớn đòi hỏi hạ tầng điện toán
+                        rất lớn, bao gồm chip xử lý chuyên dụng, trung tâm dữ liệu và nguồn năng lượng ổn định. Trong
+                        lĩnh vực này, Mỹ hiện vẫn nắm giữ nhiều lợi thế khi các doanh nghiệp công nghệ của nước này kiểm
+                        soát phần lớn năng lực tính toán AI toàn cầu và tiếp tục đầu tư mạnh vào trung tâm dữ liệu cũng
+                        như hạ tầng điện toán.</p>
+                    <p>Trong khi đó, Trung Quốc vẫn đang đẩy mạnh phát triển công nghệ bán dẫn, xây dựng hạ tầng phục vụ
+                        AI và mở rộng ứng dụng trong sản xuất. Nước này có lợi thế về quy mô dữ liệu, nguồn nhân lực
+                        công nghệ và khả năng triển khai hạ tầng với tốc độ nhanh. Một xu hướng đáng chú ý là việc tích
+                        hợp AI vào các hệ thống hoạt động trong môi trường vật lý, thường được gọi là AI hiện thân, bao
+                        gồm robot công nghiệp, phương tiện tự hành và các thiết bị thông minh. Trong lĩnh vực này, Trung
+                        Quốc đang thúc đẩy mạnh mẽ tự động hóa và robot hóa trong sản xuất, góp phần nâng cao năng suất
+                        và hiệu quả hoạt động của các nhà máy.</p>
+                    <p>Nhìn tổng thể, sự phát triển của trí tuệ nhân tạo trên thế giới đang diễn ra theo xu hướng đa
+                        lĩnh vực và đa trung tâm. Các quốc gia có thể đạt được lợi thế ở những khâu khác nhau của chuỗi
+                        giá trị công nghệ, từ nghiên cứu mô hình, phát triển hạ tầng tính toán đến triển khai ứng dụng
+                        trong sản xuất và dịch vụ. Trong thời gian tới, AI được dự báo sẽ tiếp tục phát triển mạnh mẽ và
+                        trở thành động lực quan trọng của chuyển đổi số và đổi mới mô hình tăng trưởng, đồng thời góp
+                        phần định hình cục diện công nghệ toàn cầu.</p>
+
+                    <img src="https://cdnphoto.dantri.com.vn/uZOhvQt45vwYAi7hy8rUijvLpQM=/thumb_w/1020/2025/05/23/ai-fox-1747973318864.jpg"
+                        class="w-full h-auto rounded-xl my-8 shadow-sm">
+
+                    <h2 id="sec-13"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        13. Một số sự kiện thế giới đáng chú ý</h2>
+
+                    <p>Nhân dịp kỷ niệm 115 năm Ngày Quốc tế Phụ nữ (08/3/1910 - 08/3/2026), Tổng thư ký Liên hợp quốc
+                        Antonio Guterres kêu gọi hành động bảo vệ quyền và sự tiến bộ của phụ nữ và trẻ em gái trên toàn
+                        thế giới. Phát biểu tại một sự kiện ở trụ sở Liên hợp quốc tại New York (Mỹ), ông Antonio
+                        Guterres cho biết năm 2026 đánh dấu 30 năm Hội nghị Thế giới về Phụ nữ tại Bắc Kinh (1995) - cột
+                        mốc khẳng định quyền phụ nữ là quyền con người.</p>
+                    <p>Theo ông Guterres, dù phụ nữ đã từng bước phá vỡ nhiều rào cản xã hội và nâng cao vị thế, nhưng
+                        bạo lực, phân biệt đối xử và bất bình đẳng kinh tế vẫn tồn tại, thậm chí có xu hướng gia tăng ở
+                        một số nơi. Trước thực trạng đó, ông Guterres kêu gọi cộng đồng quốc tế hành động mạnh mẽ hơn để
+                        bảo vệ quyền của phụ nữ và trẻ em gái, thúc đẩy bình đẳng giới, chống mọi hình thức phân biệt
+                        đối xử vì lợi ích chung của toàn nhân loại.</p>
+                    <p>- Phát biểu tại Sự kiện nâng cao nhận thức về mua bán người nhằm mục đích ép buộc thực hiện hành
+                        vi phạm tội tại các trung tâm lừa đảo, đồng thời chính thức giới thiệu Chiến dịch
+                        #Mắcbẫytộiphạmlừađảo (TrappedInScamCrime) của UNODC tại Việt Nam² (09/3/2026), Thứ trưởng Bộ
+                        Ngoại giao Lê Thị Thu Hằng khẳng định Việt Nam luôn coi trọng công tác phòng, chống mua bán
+                        người, xem đây là trách nhiệm của toàn bộ hệ thống chính trị và toàn dân. Việt Nam sẵn sàng tăng
+                        cường hợp tác quốc tế, phối hợp chặt chẽ với các bộ, ngành, địa phương, các tổ chức phi chính
+                        phủ và các đối tác liên quan để phòng ngừa, phát hiện và xử lý hiệu quả tội phạm mua bán người.
+                    </p>
+                    <p>Việt Nam đồng đề xuất Nghị quyết của Liên hợp quốc về “Ngày quốc tế cà phê : Ngày 10/3/2026, Đại
+                        hội đồng Liên hợp quốc thông qua Nghị quyết A/Res/80/249 lấy ngày 1/10 hằng năm làm "Ngày quốc
+                        tế cà phê" nhằm nâng cao nhận thức của cộng đồng quốc tế về ý nghĩa kinh tế, xã hội và văn hóa
+                        của cà phê cũng như vai trò của ngành cà phê đối với phát triển bền vững.</p>
+                    <p>Nghị quyết Ngày quốc tế cà phê do Brazil và Nhóm nòng cốt gồm 18 nước đề xuất, trong đó có Việt
+                        Nam, cùng sự đồng bảo trợ của 97 quốc gia thành viên Liên hợp quốc - cao nhất trong số các dự
+                        thảo nghị quyết được Đại hội đồng khóa 80 xem xét cho đến nay. Nghị quyết được kỳ vọng sẽ tạo
+                        thêm động lực để các quốc gia, tổ chức quốc tế và các giới liên quan tăng cường hợp tác, hỗ trợ
+                        nông dân và cộng đồng sản xuất cà phê, thúc đẩy đổi mới sáng tạo và phát triển bền vững ngành cà
+                        phê, đóng góp tích cực vào việc thực hiện Chương trình Nghị sự 2030 về phát triển bền vững.</p>
+                    <p>Việc Đại hội đồng Liên hợp quốc thông qua Nghị quyết về "Ngày quốc tế cà phê" có ý nghĩa đặc biệt
+                        đối với Việt Nam - một trong những quốc gia sản xuất và xuất khẩu cà phê hàng đầu thế giới. Là
+                        thành viên Nhóm nòng cốt xây dựng Nghị quyết, Việt Nam đã tích cực phối hợp với các nước và đối
+                        tác quốc tế thúc đẩy sáng kiến này, qua đó góp phần nâng cao nhận thức toàn cầu về vai trò của
+                        ngành cà phê, thúc đẩy hợp tác quốc tế trong phát triển chuỗi giá trị cà phê bền vững, đồng thời
+                        quảng bá hình ảnh và giá trị của cà phê Việt Nam tới cộng đồng quốc tế.</p>
+
+                    <p class="font-bold text-lg uppercase mt-12">VĂN BẢN MỚI</p>
+
+                    <h2 id="sec-14"
+                        class="text-[1.45rem] font-bold text-slate-900 dark:text-[#eef2f7] scroll-mt-24 mt-12 mb-5 pb-2 border-b border-slate-100 dark:border-[#1a2035]">
+                        14. Nghị định số 31/2026/NĐ-CP của Chính phủ quy định về xử phạt vi phạm hành chính trong lĩnh
+                        vực lưu trữ</h2>
+
+                    <p>Nghị định số 31/2026/NĐ-CP, ngày 21/01/2026 của Chính phủ quy định về xử phạt vi phạm hành chính
+                        trong lĩnh vực lưu trữ, có hiệu lực thi hành kể từ ngày 08/3/2026.</p>
+                    <p>Nghị định gồm 04 Chương, 22 Điều quy định về xử phạt vi phạm hành chính trong lĩnh vực lưu trữ,
+                        bao gồm: hành vi vi phạm hành chính về thực hiện nghiệp vụ lưu trữ và về hoạt động dịch vụ lưu
+                        trữ; hành vi vi phạm hành chính đã kết thúc và hành vi vi phạm hành chính đang thực hiện; hình
+                        thức xử phạt, mức xử phạt, biện pháp khắc phục hậu quả đối với từng hành vi vi phạm hành chính;
+                        đối tượng bị xử phạt; thẩm quyền xử phạt, mức phạt tiền cụ thể của các chức danh và thẩm quyền
+                        lập biên bản đối với hành vi vi phạm hành chính; việc thi hành các hình thức xử phạt vi phạm
+                        hành chính và biện pháp khắc phục hậu quả trong lĩnh vực lưu trữ.</p>
+                    <p>Các hành vi vi phạm hành chính liên quan đến tài liệu bí mật nhà nước được thực hiện theo quy
+                        định về xử phạt vi phạm hành chính trong lĩnh vực an ninh, trật tự, an toàn xã hội; phòng, chống
+                        tệ nạn xã hội; phòng, chống bạo lực gia đình. Các hành vi vi phạm hành chính liên quan đến lĩnh
+                        vực lưu trữ không được quy định tại Nghị định này thì áp dụng quy định về xử phạt vi phạm hành
+                        chính trong lĩnh vực quản lý nhà nước có liên quan để xử phạt.</p>
+                    <p>Theo đó, đối tượng áp dụng của Nghị định bao gồm:</p>
+                    <p>Tổ chức, cá nhân Việt Nam và tổ chức, cá nhân nước ngoài có hành vi vi phạm hành chính trong lĩnh
+                        vực lưu trữ trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam; Tổ chức là đối tượng bị xử
+                        phạt vi phạm hành chính theo quy định tại Nghị định này bao gồm: cơ quan nhà nước có hành vi vi
+                        phạm hành chính mà hành vi đó không thuộc nhiệm vụ quản lý nhà nước về lưu trữ; đơn vị sự nghiệp
+                        công lập; tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức chính trị xã hội nghề nghiệp,
+                        tổ chức xã hội, tổ chức xã hội nghề nghiệp; đơn vị vũ trang nhân dân; tổ chức kinh tế được thành
+                        lập theo quy định của Luật Doanh nghiệp, Luật Hợp tác xã; các tổ chức khác được thành lập theo
+                        quy định của pháp luật.</p>
+                    <p>Theo Nghị định, các hình thức xử phạt chính trong lĩnh vực lưu trữ bao gồm: cảnh cáo và phạt
+                        tiền, trong đó mức phạt tiền tối đa đối với cá nhân là 30 triệu đồng, đối với tổ chức là 60
+                        triệu đồng. Ngoài ra, hình thức xử phạt bổ sung là tước quyền sử dụng Chứng chỉ hành nghề lưu
+                        trữ có thời hạn từ 03 đến 06 tháng. Nghị định cũng quy định nhiều biện pháp khắc phục hậu quả
+                        nhằm khôi phục tình trạng ban đầu, bảo đảm an toàn, toàn vẹn của tài liệu lưu trữ.</p>
+                    <p>Nghị định quy định cụ thể các hành vi vi phạm và mức xử phạt tương ứng, tập trung vào các nhóm
+                        hành vi như: vi phạm các hành vi bị nghiêm cấm trong lĩnh vực lưu trữ; vi phạm quy định về thu
+                        nộp hồ sơ, tài liệu vào lưu trữ hiện hành và lưu trữ lịch sử; vi phạm quy định về chỉnh lý, bảo
+                        quản, hủy và sử dụng tài liệu lưu trữ; vi phạm quy định về số hóa tài liệu, tạo lập cơ sở dữ
+                        liệu tài liệu lưu trữ; vi phạm quy định về quản lý, sử dụng Chứng chỉ hành nghề lưu trữ và Giấy
+                        chứng nhận đủ điều kiện kinh doanh dịch vụ lưu trữ.</p>
+                    <p>Nghị định quy định mức phạt cao đối với các hành vi xâm hại nghiêm trọng đến tài liệu lưu trữ
+                        như: mang tài liệu lưu trữ ra ngoài trái phép; truy cập, sao chép, chia sẻ, mua bán, hủy tài
+                        liệu lưu trữ trái phép; làm mất, làm hỏng hoặc làm sai lệch nội dung tài liệu lưu trữ. Đối với
+                        lĩnh vực số hóa và quản lý dữ liệu lưu trữ, Nghị định bổ sung nhiều quy định chặt chẽ nhằm bảo
+                        đảm an ninh, an toàn thông tin, phòng ngừa nguy cơ mất mát, thất thoát dữ liệu.</p>
+                    <p>Bên cạnh đó, Nghị định quy định rõ thẩm quyền xử phạt vi phạm hành chính của Chủ tịch Ủy ban nhân
+                        dân các cấp, Thanh tra các bộ, ngành, Giám đốc Sở Nội vụ và các cơ quan, tổ chức được giao nhiệm
+                        vụ kiểm tra trong lĩnh vực lưu trữ, bảo đảm phù hợp với quy mô, tính chất, mức độ vi phạm và yêu
+                        cầu quản lý nhà nước.</p>
+
+                </article>
+            </div>
+
+            <footer
+                class="mt-16 py-8 relative text-center bg-slate-50 dark:bg-[rgba(15,12,24,0.6)] backdrop-blur-md rounded-t-xl border-t border-slate-200 dark:border-[rgba(212,160,83,0.08)] w-full">
+                <p class="text-sm font-medium text-slate-500 dark:text-[#7a8ba0]">© 2026 AI Insight Report. Generated
+                    formatting via Tony Bui - Master AI.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // 1. Dọn rác hệ thống AI (Sử dụng kỹ thuật băm chuỗi bảo mật tuyệt đối)
+        document.addEventListener('DOMContentLoaded', function () {
+            var article = document.getElementById('content-article');
+            if (article) {
+                var c = '\\[' + 'cite:.*?' + '\\]';
+                var s = '\\[' + 'source:.*?' + '\\]';
+                article.innerHTML = article.innerHTML.replace(new RegExp(c, 'g'), '').replace(new RegExp(s, 'g'), '');
+            }
+        });
+
+        // 2. Dark Mode Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const html = document.documentElement;
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+            lightIcon.classList.remove('hidden');
+        } else {
+            html.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function () {
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+
+        // 3. Scroll Spy Highlight
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.toc-link');
+            const secs = document.querySelectorAll('h2[id]');
+
+            function spy() {
+                let id = '';
+                const sy = window.scrollY;
+                for (let i = 0; i < secs.length; i++) {
+                    const top = secs[i].getBoundingClientRect().top + window.scrollY;
+                    if (sy >= top - 200) { id = secs[i].getAttribute('id'); }
+                }
+                if ((window.innerHeight + sy) >= document.body.offsetHeight - 50 && secs.length > 0) {
+                    id = secs[secs.length - 1].getAttribute('id');
+                }
+                if (id) {
+                    links.forEach(l => {
+                        l.classList.remove('active');
+                        if (l.getAttribute('href') === `#${id}`) { l.classList.add('active'); }
+                    });
+                }
+            }
+            window.addEventListener('scroll', spy);
+            setTimeout(spy, 100);
+        });
+
+        // 4. Mobile Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        const tocLinksMenu = document.querySelectorAll('.toc-link');
+
+        function toggleMenu() {
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+
+        tocLinksMenu.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 768) { toggleMenu(); }
+            });
+        });
+    </script>
+</body>
+
+</html>
